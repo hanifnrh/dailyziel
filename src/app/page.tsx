@@ -34,14 +34,14 @@ export default function Home() {
         </div>
         <div>
           <BlurIn
-            className="text-4xl md:text-4xl lg:text-6xl title-head max-w-7xl mx-auto text-center relative z-10 py-6 bg-clip-text text-transparent bg-[linear-gradient(107deg,#000000_1.10%,#000000_60.18%,#ae04ba_105.75%)] dark:from-neutral-800 dark:via-white dark:to-white"
+            className="text-4xl md:text-4xl lg:text-6xl title-head max-w-7xl mx-auto text-center relative z-10 py-6 bg-clip-text text-transparent bg-[linear-gradient(107deg,#000000_1.10%,#000000_60.18%,#ae04ba_105.75%)] dark:bg-[linear-gradient(107deg,#ffffff_1.10%,#ffffff_60.18%,#ae04ba_105.75%)]"
           >
             Build extraordinary websites <br /> with me <Cover>running</Cover> in no time
           </BlurIn>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <ShimmerButton className="body shadow-2xl h-full">
-            <span className="whitespace-pre-wrap text-center text-sm leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+          <ShimmerButton className="body shadow-2xl h-full ">
+            <span className="whitespace-pre-wrap text-center text-sm leading-none tracking-tight text-white dark:text-black dark:from-white dark:to-white lg:text-lg">
               Get started
             </span>
           </ShimmerButton>

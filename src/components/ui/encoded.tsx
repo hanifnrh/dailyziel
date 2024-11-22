@@ -68,7 +68,7 @@ const EncodedText = () => {
                     onMouseOver={onHover}
                     className="cursor-pointer uppercase text-muted-foreground hover:text-foreground"
                 >
-                    services
+                    SERVICES
                 </p>
             </Link>
             <Link href="#contact">
@@ -77,7 +77,7 @@ const EncodedText = () => {
                     onMouseOver={onHover}
                     className="cursor-pointer uppercase text-muted-foreground hover:text-foreground"
                 >
-                    contact
+                    CONTACT
                 </p>
             </Link>
             

@@ -2,6 +2,7 @@
 import { SparklesCore } from "@/components/ui/sparkles";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTheme } from "next-themes";
 import React, { useEffect, useId, useRef, useState } from "react";
 
 export const Cover = ({
@@ -158,7 +159,10 @@ export const Beam = ({
   hovered?: boolean;
   width?: number;
 } & React.ComponentProps<typeof motion.svg>) => {
+  const { theme } = useTheme();
   const id = useId();
+
+  const stopColor = theme === "dark" ? "#ffffff" : "purple"; // Set color to white in dark mode
 
   return (
     <motion.svg
@@ -200,15 +204,14 @@ export const Beam = ({
             repeatDelay: hovered ? Math.random() * (2 - 1) + 1 : delay ?? 1,
           }}
         >
-          <stop stopColor="purple" stopOpacity="0" />
-          <stop stopColor="purple" />
-          <stop offset="1" stopColor="purple" stopOpacity="0" />
+          <stop stopColor={stopColor} stopOpacity="0" />
+          <stop stopColor={stopColor} />
+          <stop offset="1" stopColor={stopColor} stopOpacity="0" />
         </motion.linearGradient>
       </defs>
     </motion.svg>
   );
 };
-
 export const CircleIcon = ({
   className,
   delay,

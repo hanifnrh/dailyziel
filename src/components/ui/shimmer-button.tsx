@@ -1,6 +1,6 @@
-import React, { CSSProperties } from "react";
-
 import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
+import React, { CSSProperties } from "react";
 
 export interface ShimmerButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -16,7 +16,6 @@ export interface ShimmerButtonProps
 const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
   (
     {
-      shimmerColor = "#ffffff",
       shimmerSize = "0.05em",
       shimmerDuration = "3s",
       borderRadius = "15px",
@@ -27,6 +26,8 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
     },
     ref,
   ) => {
+    const { theme } = useTheme();
+    const shimmerColor = theme === "dark" ? "#e538f5" : "#ffffff";
     return (
       <button
         style={
@@ -83,7 +84,7 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
         {/* backdrop */}
         <div
           className={cn(
-            "absolute -z-20 [background:var(--bg)] [border-radius:var(--radius)] [inset:var(--cut)]",
+            "absolute -z-20 dark:bg-white [background:var(--bg)] [border-radius:var(--radius)] [inset:var(--cut)]",
           )}
         />
       </button>
