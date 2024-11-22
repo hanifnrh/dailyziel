@@ -34,7 +34,7 @@ export default function Home() {
         </div>
         <div>
           <BlurIn
-            className="text-4xl md:text-4xl lg:text-6xl title-head max-w-7xl mx-auto text-center relative z-10 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white"
+            className="text-4xl md:text-4xl lg:text-6xl title-head max-w-7xl mx-auto text-center relative z-10 py-6 bg-clip-text text-transparent bg-[linear-gradient(107deg,#000000_1.10%,#000000_60.18%,#ae04ba_105.75%)] dark:from-neutral-800 dark:via-white dark:to-white"
           >
             Build extraordinary websites <br /> with me <Cover>running</Cover> in no time
           </BlurIn>

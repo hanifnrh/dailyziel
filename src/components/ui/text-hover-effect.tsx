@@ -51,7 +51,7 @@ export const TextHoverEffect = ({
             <>
               <stop offset="0%" stopColor={"purple"} />
               <stop offset="25%" stopColor={"purple"} />
-              <stop offset="50%" stopColor={"blue"} />
+              <stop offset="50%" stopColor={"violet"} />
               <stop offset="75%" stopColor={"purple"} />
               <stop offset="100%" stopColor={"violet"} />
             </>
