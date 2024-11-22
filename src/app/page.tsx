@@ -36,51 +36,55 @@ export default function Home() {
           <BlurIn
             className="text-4xl md:text-4xl lg:text-6xl title-head max-w-7xl mx-auto text-center relative z-10 py-6 bg-clip-text text-transparent bg-[linear-gradient(107deg,#000000_1.10%,#000000_60.18%,#ae04ba_105.75%)] dark:bg-[linear-gradient(107deg,#ffffff_1.10%,#ffffff_60.18%,#ae04ba_105.75%)]"
           >
-            Build extraordinary websites <br /> with me <Cover>running</Cover> in no time
+            Build extraordinary websites <br /> and <Cover>running</Cover> in no time
           </BlurIn>
         </div>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <ShimmerButton className="body shadow-2xl h-full ">
-            <span className="whitespace-pre-wrap text-center text-sm leading-none tracking-tight text-white dark:text-black dark:from-white dark:to-white lg:text-lg">
-              Get started
-            </span>
-          </ShimmerButton>
-          <AnimatedGradientText className="h-full lg:text-lg">
-            🔮
-            <span
-              className={cn(
-                `body h-full inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
-              )}
+        <BlurIn>
+          <div className="flex gap-4 items-center flex-col sm:flex-row">
+            <ShimmerButton className="body shadow-2xl h-full ">
+              <span className="whitespace-pre-wrap text-center text-sm leading-none tracking-tight text-white dark:text-black dark:from-white dark:to-white lg:text-lg">
+                Get started
+              </span>
+            </ShimmerButton>
+            <AnimatedGradientText className="h-full lg:text-lg">
+              🔮
+              <span
+                className={cn(
+                  `body h-full inline animate-gradient bg-gradient-to-r from-[#5d55a8] via-[#9c40ff] to-[#750b83] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+                )}
+              >
+                Github
+              </span>
+              <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+            </AnimatedGradientText>
+          </div>
+        </BlurIn>
+        <BlurIn>
+          <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+            <a
+              className="flex items-center gap-2 justify-center text-base body-light tracking-normal"
+              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Github
-            </span>
-            <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-          </AnimatedGradientText>
-        </div>
-        <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-          <a
-            className="flex items-center gap-2 justify-center body-light"
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <kbd className="mr-1 p-1 pointer-events-none inline-flex h-fit select-none items-center gap-1 rounded border bg-purple-100 px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
-              <span className="text-xs">⌘</span>D
-            </kbd>
-            Theme
-          </a>
-          <a
-            className="flex items-center gap-2 justify-center body-light"
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <kbd className="mr-1 p-1 pointer-events-none inline-flex h-fit select-none items-center gap-1 rounded border bg-purple-100 px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
-              <span className="text-xs">⌘</span>Q
-            </kbd>
-            Menu
-          </a>
-        </div>
+              <kbd className="mr-1 p-1 pointer-events-none inline-flex h-fit select-none items-center gap-1 rounded border bg-purple-100 dark:bg-zinc-900 px-1.5 text-[10px] text-black dark:text-muted-foreground opacity-100 text-base body-light">
+                <span className="text-sm">⌘</span>D
+              </kbd>
+              Theme
+            </a>
+            <a
+              className="flex items-center gap-2 justify-center text-base body-light tracking-normal"
+              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <kbd className="mr-1 p-1 pointer-events-none inline-flex h-fit select-none items-center gap-1 rounded border bg-purple-100 dark:bg-zinc-900 px-1.5 text-[10px] text-black dark:text-muted-foreground opacity-100 text-base body-light">
+                <span className="text-sm">⌘</span>Q
+              </kbd>
+              Menu
+            </a>
+          </div>
+        </BlurIn>
       </main>
     </div>
   );

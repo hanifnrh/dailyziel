@@ -200,7 +200,7 @@ export const Beam = ({
             duration: hovered ? 0.5 : duration ?? 2,
             ease: "linear",
             repeat: Infinity,
-            delay: hovered ? Math.random() * (1 - 0.2) + 0.2 : 0,
+            delay: hovered ? Math.random() * (1 - 0.2) + 0.2 : delay ?? 0,
             repeatDelay: hovered ? Math.random() * (2 - 1) + 1 : delay ?? 1,
           }}
         >
