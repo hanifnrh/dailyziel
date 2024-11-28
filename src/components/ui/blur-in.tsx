@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 interface BlurInProps {
   word?: string; // Opsional, bisa diganti dengan children
   children?: React.ReactNode; // Mendukung elemen kompleks
+  style?: React.CSSProperties;
   className?: string;
   variant?: {
     hidden: { filter: string; opacity: number };
@@ -14,7 +15,7 @@ interface BlurInProps {
   duration?: number;
 }
 
-const BlurIn = ({ word, children, className, variant, duration = 1 }: BlurInProps) => {
+const BlurIn = ({ word, children, style, className, variant, duration = 1 }: BlurInProps) => {
   const defaultVariants = {
     hidden: { filter: "blur(10px)", opacity: 0 },
     visible: { filter: "blur(0px)", opacity: 1 },
@@ -28,9 +29,9 @@ const BlurIn = ({ word, children, className, variant, duration = 1 }: BlurInProp
       transition={{ duration }}
       variants={combinedVariants}
       className={cn(
-        "font-display text-center tracking-[-0.02em] drop-shadow-sm md:text-7xl md:leading-[5rem]",
         className,
       )}
+      style={style}
     >
       {word || children}
     </motion.h1>

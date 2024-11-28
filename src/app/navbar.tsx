@@ -1,18 +1,17 @@
 // Navbar.tsx
 
 "use client";
-import { Button } from "@/components/ui/button";
 import EncodedText from "@/components/ui/encoded";
+import { Button, Link } from "@nextui-org/react";
 import { GeistMono } from "geist/font/mono";
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import React, { useState } from "react";
 
 // Dynamically import the Clock component with ssr: false
 const Clock = dynamic(() => import('../components/ui/clock'), { ssr: false });
 
-const Navbar: React.FC = () => {
+const NavbarHome: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const currentPath = usePathname();
 
@@ -38,7 +37,7 @@ const Navbar: React.FC = () => {
                         </Link>
 
                         {/* Render Clock component only on client-side */}
-                        <Button variant="outline">
+                        <Button>
                             <Clock locale="en-CA" />
                         </Button>
                     </div>
@@ -73,4 +72,4 @@ const Navbar: React.FC = () => {
     );
 };
 
-export default Navbar;
+export default NavbarHome;

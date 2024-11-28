@@ -44,38 +44,38 @@ const EncodedText = () => {
 
     return (
         <div  className={`${GeistMono.className} flex flex-col md:flex-row gap-x-5 gap-y-3 items-center`}>
-            <Link href="#about">
+            <Link href="/about">
                 <p
                     data-value="About"
                     onMouseOver={onHover}
-                    className="cursor-pointer uppercase text-muted-foreground hover:text-foreground"
+                    className="cursor-pointer uppercase text-zinc-500 hover:text-foreground"
                 >
                     ABOUT
                 </p>
             </Link>
-            <Link href="#projects">
+            <Link href="/#crafts">
                 <p
-                    data-value="Projects"
+                    data-value="Crafts"
                     onMouseOver={onHover}
-                    className="cursor-pointer uppercase text-muted-foreground hover:text-foreground"
+                    className="cursor-pointer uppercase text-zinc-500 hover:text-foreground"
                 >
-                    PROJECTS
+                    CRAFTS
                 </p>
             </Link>
-            <Link href="#services">
+            <Link href="https://drive.google.com/file/d/1YVITGrnvwSLOR7WKBRs4cAaRevdYVNvf/view?usp=sharing">
                 <p
-                    data-value="services"
+                    data-value="CV"
                     onMouseOver={onHover}
-                    className="cursor-pointer uppercase text-muted-foreground hover:text-foreground"
+                    className="cursor-pointer uppercase text-zinc-500 hover:text-foreground"
                 >
-                    SERVICES
+                    CV
                 </p>
             </Link>
             <Link href="#contact">
                 <p
-                    data-value="contact"
+                    data-value="Contact"
                     onMouseOver={onHover}
-                    className="cursor-pointer uppercase text-muted-foreground hover:text-foreground"
+                    className="cursor-pointer uppercase text-zinc-500 hover:text-foreground"
                 >
                     CONTACT
                 </p>
