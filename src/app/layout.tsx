@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <div className="background flex flex-col items-center">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -39,6 +40,7 @@ export default function RootLayout({
             <Toaster></Toaster>
           </NextUIProvider>
         </ThemeProvider>
+        </div>
       </body>
     </html>
   );
