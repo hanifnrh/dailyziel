@@ -14,7 +14,7 @@ export default function Footer() {
                     src="/zielblack.png"
                     width={500}
                     height={500}
-                    className="h-12 w-auto"
+                    className="h-12 w-auto navbar-logo"
                     alt="Picture of the author">
                 </Image>
             </div>
@@ -25,7 +25,7 @@ export default function Footer() {
                     size="md"
                     target="__blank"
                 >
-                    <span className="border-b border-black inline-flex">
+                    <span className="border-b border-black dark:border-white inline-flex">
                         LinkedIn <GoArrowUpRight className="transition-transform duration-200 transform group-hover:translate-y-[-4px]" />
                     </span>
                 </Link>
@@ -35,7 +35,7 @@ export default function Footer() {
                     size="md"
                     target="__blank"
                 >
-                    <span className="border-b border-black inline-flex">
+                    <span className="border-b border-black dark:border-white inline-flex">
                         Instagram <GoArrowUpRight className="transition-transform duration-200 transform group-hover:translate-y-[-4px]" />
                     </span>
                 </Link>
@@ -45,7 +45,7 @@ export default function Footer() {
                     size="md"
                     target="__blank"
                 >
-                    <span className="border-b border-black inline-flex">
+                    <span className="border-b border-black dark:border-white inline-flex">
                         Email
                         <GoArrowUpRight className="transition-transform duration-200 transform group-hover:translate-y-[-4px]" />
                     </span>

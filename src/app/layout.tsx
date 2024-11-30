@@ -21,7 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="background flex flex-col items-center">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -29,18 +28,17 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NextUIProvider>
-            <div className="max-w-screen-2xl" >
+            <MenuProvider>
               <ResponsiveNavbar />
-              <MenuProvider>
+              <div className="max-w-screen-2xl mx-auto" >
                 {children}
-                <Menu></Menu>
-              </MenuProvider>
+              </div>
               <Footer />
-            </div>
+              <Menu></Menu>
+            </MenuProvider>
             <Toaster></Toaster>
           </NextUIProvider>
         </ThemeProvider>
-        </div>
       </body>
     </html>
   );
