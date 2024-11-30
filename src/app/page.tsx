@@ -59,7 +59,7 @@ export default function Home() {
             <BlurIn
               className="text-4xl md:text-4xl lg:text-6xl title-head max-w-7xl mx-auto text-center relative z-10 py-6 lg:px-40 bg-clip-text text-transparent bg-[linear-gradient(107deg,#000000_1.10%,#000000_60.18%,#ae04ba_80.100%)] dark:bg-[linear-gradient(107deg,#ffffff_1.10%,#ffffff_60.18%,#ae04ba_105.75%)]"
             >
-              Hi I&apos;m Ziel, a
+              Hi I&apos;m Ziel, a 
               <Cover className="bg-clip-text bg-purple-950 dark:bg-white inline-block relative z-20 group-hover/cover:bg-white transition duration-200">creative</Cover> developer and designer
             </BlurIn>
           </div>
