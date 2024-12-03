@@ -1,9 +1,9 @@
-import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/ui/footer";
 import Menu from "@/components/ui/menu";
 import { MenuProvider } from "@/components/ui/menuprovider";
 import ResponsiveNavbar from "@/components/ui/navbar";
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "@/lib/theme-provider";
 import { NextUIProvider } from "@nextui-org/react";
 import type { Metadata } from "next";
 import * as React from "react";

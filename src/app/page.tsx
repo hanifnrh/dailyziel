@@ -124,7 +124,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
-        <div className="body text-lg mt-10 border-b border-black">
+        <div className="body text-lg mt-10 border-b border-black dark:border-white">
           ABOUT
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-2 items-center justify-center gap-4">
@@ -154,7 +154,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
-        <div id="crafts" className="body text-lg mt-10 border-b border-black">
+        <div id="crafts" className="body text-lg mt-10 border-b border-black dark:border-white">
           CRAFTS
         </div>
         <div className="mt-10">
