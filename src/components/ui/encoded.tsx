@@ -53,13 +53,13 @@ const EncodedText = () => {
                     ABOUT
                 </p>
             </Link>
-            <Link href="/#crafts">
+            <Link href="/#PORTFOLIO">
                 <p
-                    data-value="Crafts"
+                    data-value="PORTFOLIO"
                     onMouseOver={onHover}
                     className="cursor-pointer uppercase text-zinc-500 hover:text-foreground"
                 >
-                    CRAFTS
+                    PORTFOLIO
                 </p>
             </Link>
             <Link href="https://drive.google.com/file/d/1YVITGrnvwSLOR7WKBRs4cAaRevdYVNvf/view?usp=sharing">
