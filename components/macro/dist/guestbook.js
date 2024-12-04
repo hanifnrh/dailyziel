@@ -37,7 +37,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 exports.__esModule = true;
 var server_1 = require("@/utils/supabase/server");
-var react_icons_1 = require("@radix-ui/react-icons");
 var image_1 = require("next/image");
 var GuestbookCard = function (_a) {
     var content = _a.content, user_id = _a.user_id, createdAt = _a.createdAt, index = _a.index;
@@ -77,16 +76,14 @@ var GuestbookCard = function (_a) {
                     };
                     user_avatar = ((_d = (_c = user === null || user === void 0 ? void 0 : user.user) === null || _c === void 0 ? void 0 : _c.user_metadata) === null || _d === void 0 ? void 0 : _d.avatar_url) || "/default-avatar.png";
                     full_name = ((_f = (_e = user === null || user === void 0 ? void 0 : user.user) === null || _e === void 0 ? void 0 : _e.user_metadata) === null || _f === void 0 ? void 0 : _f.full_name) || "Anonymous";
-                    return [2 /*return*/, (React.createElement("div", { className: "group relative z-10 flex h-fit w-full flex-col gap-y-2 pl-8" },
+                    return [2 /*return*/, (React.createElement("div", { className: "group relative z-10 flex h-full w-full flex-col gap-y-2" },
                             React.createElement("div", { className: "flex w-full items-center gap-4" },
                                 React.createElement("div", { className: "relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-secondary md:h-10 md:w-10" },
                                     React.createElement(image_1["default"], { src: user_avatar, alt: full_name, fill: true, className: "object-cover" })),
                                 React.createElement("div", { className: "flex flex-col" },
-                                    React.createElement("p", { className: "text-xs font-semibold md:text-sm" }, full_name),
-                                    React.createElement("p", { className: "text-xs text-muted-foreground" }, formatTimestamp(createdAt)))),
-                            React.createElement("code", { className: "h-auto" }, content),
-                            React.createElement("div", { className: "anim-slow absolute -left-4 top-2 flex h-8 w-8 items-center justify-center rounded-full border bg-popover text-popover-foreground group-hover:border-primary" },
-                                React.createElement(react_icons_1.RocketIcon, { className: "h-4 w-4" }))))];
+                                    React.createElement("p", { className: "text-xs body md:text-sm" }, full_name),
+                                    React.createElement("p", { className: "text-xs text-muted-foreground body-light" }, formatTimestamp(createdAt)))),
+                            React.createElement("code", { className: "h-auto body-light" }, content)))];
             }
         });
     });

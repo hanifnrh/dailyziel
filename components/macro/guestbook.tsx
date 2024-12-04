@@ -1,5 +1,4 @@
 import { createAdminClient } from "@/utils/supabase/server";
-import { RocketIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
 const GuestbookCard = async ({
@@ -47,7 +46,7 @@ const GuestbookCard = async ({
     const full_name = user?.user?.user_metadata?.full_name || "Anonymous";
 
     return (
-        <div className="group relative z-10 flex h-fit w-full flex-col gap-y-2 pl-8">
+        <div className="group relative z-10 flex h-full w-full flex-col gap-y-2">
             <div className="flex w-full items-center gap-4">
                 <div className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-secondary md:h-10 md:w-10">
                     <Image
@@ -58,14 +57,11 @@ const GuestbookCard = async ({
                     />
                 </div>
                 <div className="flex flex-col">
-                    <p className="text-xs font-semibold md:text-sm">{full_name}</p>
-                    <p className="text-xs text-muted-foreground">{formatTimestamp(createdAt)}</p>
+                    <p className="text-xs body md:text-sm">{full_name}</p>
+                    <p className="text-xs text-muted-foreground body-light">{formatTimestamp(createdAt)}</p>
                 </div>
             </div>
-            <code className="h-auto">{content}</code>
-            <div className="anim-slow absolute -left-4 top-2 flex h-8 w-8 items-center justify-center rounded-full border bg-popover text-popover-foreground group-hover:border-primary">
-                <RocketIcon className="h-4 w-4" />
-            </div>
+            <code className="h-auto body-light">{content}</code>
         </div>
     );
 };

@@ -7,7 +7,6 @@ import { BrandMarquee } from "@/components/ui/brandmarquee";
 import { SimpleCard_V5 } from "@/components/ui/cardv5";
 import { Cover } from "@/components/ui/cover";
 import { FadeText } from "@/components/ui/fade-text";
-import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { useMenu } from "@/components/ui/menuprovider";
 import Particles from "@/components/ui/particles";
@@ -16,7 +15,6 @@ import RippleButton from "@/components/ui/ripple-button";
 import ShimmerButton from "@/components/ui/shimmer-button";
 import { SocialsDock } from "@/components/ui/socialsdock";
 import { TextHoverEffect } from "@/components/ui/text-hover-effect";
-import { Vortex } from "@/components/ui/vortex";
 import { cn } from "@/lib/utils";
 import {
   Link
@@ -24,7 +22,6 @@ import {
 import "animate.css/animate.compat.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -423,41 +420,6 @@ export default function Home() {
               </SimpleCard_V5>
             </div>
           </div>
-        </div>
-
-        <div className="w-full rounded-xl h-[30rem] overflow-hidden mt-20" id="contact" data-aos="fade-up">
-          <Vortex
-            backgroundColor="black"
-            className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
-          >
-            <HeroHighlight>
-              <motion.h1
-                initial={{
-                  opacity: 0,
-                  y: 20,
-                }}
-                animate={{
-                  opacity: 1,
-                  y: [20, -5, 0],
-                }}
-                transition={{
-                  duration: 0.5,
-                  ease: [0.4, 0.0, 0.2, 1],
-                }}
-                className="title-head text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white max-w-3xl leading-relaxed lg:leading-snug text-center mx-auto "
-              >
-                Interested in working with me?{" "}
-                <Highlight className="text-black dark:text-white">
-                  <Link
-                    className="text-2xl md:text-4xl lg:text-5xl"
-                    href="mailto:dailyziel@gmail.com"
-                  >
-                    Hit me up!
-                  </Link>
-                </Highlight>
-              </motion.h1>
-            </HeroHighlight>
-          </Vortex>
         </div>
       </div>
     </main>

@@ -51,7 +51,7 @@ const ContentForm = ({ user }: { user: User }) => {
             onSubmit={handleSubmit}
             id="content-form"
         >
-            <p className="mb-2 text-balance text-sm text-muted-foreground">
+            <p className="mb-2 text-balance body-light text-sm text-muted-foreground">
                 Signed in as <span className="text-foreground">{user.email}</span>
             </p>
             <div className="flex items-center gap-x-2">

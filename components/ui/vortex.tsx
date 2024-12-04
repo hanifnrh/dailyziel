@@ -1,7 +1,8 @@
+"use client"
 import { cn } from "@/lib/utils";
-import React, { useEffect, useRef } from "react";
-import { createNoise3D } from "simplex-noise";
 import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { createNoise3D } from "simplex-noise";
 
 interface VortexProps {
   children?: any;

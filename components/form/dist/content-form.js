@@ -84,7 +84,7 @@ var ContentForm = function (_a) {
         });
     }); };
     return (React.createElement("form", { className: "mt-2 flex w-full flex-col", onSubmit: handleSubmit, id: "content-form" },
-        React.createElement("p", { className: "mb-2 text-balance text-sm text-muted-foreground" },
+        React.createElement("p", { className: "mb-2 text-balance body-light text-sm text-muted-foreground" },
             "Signed in as ",
             React.createElement("span", { className: "text-foreground" }, user.email)),
         React.createElement("div", { className: "flex items-center gap-x-2" },

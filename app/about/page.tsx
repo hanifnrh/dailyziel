@@ -1,26 +1,27 @@
 "use client"
 import { AboutCard } from "@/components/ui/aboutcard";
+import BlurIn from "@/components/ui/blur-in";
 import { BrandMarquee } from "@/components/ui/brandmarquee";
-import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { SocialsDock } from "@/components/ui/socialsdock";
 import { Timeline } from "@/components/ui/timeline";
-import { Vortex } from "@/components/ui/vortex";
-import {
-    Link
-} from "@nextui-org/react";
 import "animate.css/animate.compat.css";
-import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
+import { useEffect } from "react";
 import { CgDesignmodo } from "react-icons/cg";
 import { FaCode } from "react-icons/fa";
 import { GiGraduateCap } from "react-icons/gi";
 
 export default function Home() {
+    useEffect(() => {
+        AOS.init({})
+    }, [])
     const data = [
         {
             title: "Art background",
             content: (
-                <div>
+                <div data-aos="fade-up">
                     <p className="body-light text-neutral-800 dark:text-neutral-200 text-sm md:text-lg mb-8 text-justify">
                         Growing up with a deep passion for art, I found immense joy in creating beautiful things on my sketchbook, letting my imagination shape each stroke and line. I was inspired by legendary artists like Van Gogh and Michelangelo, alongside modern illustrators like Kim Junghyun, Ha Ilkwon. I guess I have fondness in how beautiful the sophisticated anatomy of human being and this whole shape of universe.
                     </p>
@@ -60,7 +61,7 @@ export default function Home() {
         {
             title: "UI/UX Journey",
             content: (
-                <div>
+                <div data-aos="fade-up">
                     <p className="body-light text-neutral-800 dark:text-neutral-200 text-sm md:text-lg mb-8 text-justify">
                         Somehow I love science as much as I love art, as Mr. Keating in Dead Poets Society says &quot;..medicine, law, business, engineering, these are noble pursuits and necessary to sustain life. But poetry, beauty, romance, love, these are what we stay alive for.&quot; I&apos;ve been drawn with science since I was a little kid watching animal planet and reading books about dinosaurs. Later, I chose science major in highschool which led me into choosing Computer Engineering for my bachelor degree. Being in STEM was a hard turnaround, from freely brushing around my canvas to technically code a fully functional program. But I managed to survive with a lot of struggle understanding the logic of programming language. Along the way, I also develop UI design skill leveraging my art background to create beautiful design yet with good functionality. I practice a lot using Figma as my main tools. I joined a few competitions to seek more experiences.
                     </p>
@@ -100,7 +101,7 @@ export default function Home() {
         {
             title: "Full Stack Development",
             content: (
-                <div>
+                <div data-aos="fade-up">
                     <p className="body-light text-neutral-800 dark:text-neutral-200 text-sm md:text-lg mb-8 text-justify">
                         Implementing everything I&apos;ve learned from university, I&apos;ve completed several mini projects as part of my course tasks to practice coding with different languages, frameworks, and tools. Currently, I&apos;m quite familiar with Next.js, Laravel, MySQL, phpMyAdmin, Django, PostgreSQL, TypeScript, Git, and many more as languages and tools. Not only from assignments, I&apos;ve also practiced building my own portfolio website many times.
 
@@ -129,8 +130,10 @@ export default function Home() {
     return (
         <main>
             <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
-                <div className="grid grid-cols-1 xl:grid-cols-2 items-center justify-center gap-4">
-                    <div className="body">
+                <BlurIn
+                    className="grid grid-cols-1 xl:grid-cols-2 items-center justify-center gap-4"
+                >
+                    <div className="body" data-aos="fade-right">
                         <div className="body-bold text-center xl:text-start justify-center xl:justify-start text-xl md:text-4xl block">
                             Undergraduate Computer Engineering
                             <span className="text-sky-700 inline-flex items-center mr-2 ml-2">
@@ -143,61 +146,27 @@ export default function Home() {
                                 Developer <FaCode className="ml-1" />
                             </span>
                         </div>
-
-
                         <div className="mt-10 text-center xl:text-justify text-sm md:text-lg">
-                            A passionate UI/UX designer and full-stack web developer dedicated to crafting exceptional digital experiences. With a love for design and a knack for building visually stunning and functional creations, I thrive on bringing ideas to life—merging creativity with code to make every project a masterpiece.
+                            Hi I&apos;m Nurrahmat Hanif, I go by Ziel. A passionate UI/UX designer and full-stack web developer dedicated to crafting exceptional digital experiences. With a love for design and a knack for building visually stunning and functional creations. Currently enrolling as Computer Engineering Student in Universitas Diponegoro, Indonesia. Based in Jakarta & Semarang, Indonesia.
                         </div>
                         <div className="mt-10">
                             <SocialsDock></SocialsDock>
                         </div>
                     </div>
-                    <AboutCard></AboutCard>
-                </div>
+                    <div data-aos="fade-left">
+                        <AboutCard></AboutCard>
+                    </div>
+                </BlurIn>
             </div>
             <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
-                <div>
+                <BlurIn>
                     <Timeline data={data} />
-                </div>
+                </BlurIn>
                 <div className="w-full text-center body-bold text-2xl md:text-4xl py-20">
-                    <div>
+                    <div data-aos="fade-up">
                         My Stacks:
                     </div>
                     <BrandMarquee></BrandMarquee>
-                </div>
-                <div id="contact" className="w-full rounded-xl h-[30rem] overflow-hidden mt-20">
-                    <Vortex
-                        backgroundColor="black"
-                        className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
-                    >
-                        <HeroHighlight>
-                            <motion.h1
-                                initial={{
-                                    opacity: 0,
-                                    y: 20,
-                                }}
-                                animate={{
-                                    opacity: 1,
-                                    y: [20, -5, 0],
-                                }}
-                                transition={{
-                                    duration: 0.5,
-                                    ease: [0.4, 0.0, 0.2, 1],
-                                }}
-                                className="title-head text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white max-w-3xl leading-relaxed lg:leading-snug text-center mx-auto "
-                            >
-                                Interested in working with me?{" "}
-                                <Highlight className="text-black dark:text-white">
-                                    <Link
-                                        className="text-2xl md:text-4xl lg:text-5xl"
-                                        href="#"
-                                    >
-                                        Hit me up!
-                                    </Link>
-                                </Highlight>
-                            </motion.h1>
-                        </HeroHighlight>
-                    </Vortex>
                 </div>
             </div>
         </main>
