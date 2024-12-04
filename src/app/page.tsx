@@ -22,6 +22,8 @@ import {
   Link
 } from "@nextui-org/react";
 import "animate.css/animate.compat.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { useTheme } from "next-themes";
@@ -41,6 +43,9 @@ export default function Home() {
     setColor(resolvedTheme === "dark" ? "#ffffff" : "#ae04ba");
   }, [resolvedTheme]);
 
+  useEffect(() => {
+    AOS.init({})
+  }, [])
   return (
     <main>
       <div className="flex flex-col items-center justify-center p-8 pb-20 gap-16 sm:p-20">
@@ -119,16 +124,18 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-10">
+      <BlurIn
+        className="py-10"
+      >
         <BrandMarquee></BrandMarquee>
-      </div>
+      </BlurIn>
 
       <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
-        <div className="body text-lg mt-10 border-b border-black dark:border-white">
+        <div className="body text-lg mt-10 border-b border-black" data-aos="fade-up">
           ABOUT
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-2 items-center justify-center gap-4">
-          <div className="body">
+          <div className="body" data-aos="fade-right">
             <div className="body-bold text-center xl:text-start justify-center xl:justify-start text-xl md:text-4xl block">
               Undergraduate Computer Engineering
               <span className="text-sky-700 inline-flex items-center mr-2 ml-2">
@@ -150,16 +157,18 @@ export default function Home() {
               <SocialsDock></SocialsDock>
             </div>
           </div>
-          <AboutCard></AboutCard>
+          <div data-aos="fade-left">
+            <AboutCard></AboutCard>
+          </div>
         </div>
       </div>
-      <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
-        <div id="crafts" className="body text-lg mt-10 border-b border-black dark:border-white">
-          CRAFTS
+      <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20" id="PORTFOLIO">
+        <div className="body text-lg mt-10 border-b border-black" data-aos="fade-up">
+          PORTFOLIO
         </div>
         <div className="mt-10">
           <div className="flex justify-center">
-            <div
+            <div data-aos="fade-up"
               className={cn(
                 "inline-flex items-center group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
               )}
@@ -173,7 +182,7 @@ export default function Home() {
           </div>
 
           <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-10 body-light text-lg mt-10">
-            <div>
+            <div data-aos="fade-right">
               <div className="flex flex-col flex-wrap">
                 Academiku
               </div>
@@ -215,7 +224,7 @@ export default function Home() {
                 </RippleButton>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-left">
               <SimpleCard_V5>
                 <img src="academiku.png" alt="" />
               </SimpleCard_V5>
@@ -225,7 +234,7 @@ export default function Home() {
 
         <div className="mt-10">
           <div className="flex justify-center">
-            <div
+            <div data-aos="fade-up"
               className={cn(
                 "inline-flex items-center group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
               )}
@@ -239,7 +248,7 @@ export default function Home() {
           </div>
 
           <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-10 body-light text-lg mt-10">
-            <div className="order-1 xl:order-2">
+            <div className="order-1 xl:order-2" data-aos="fade-left">
               <div className="flex flex-col flex-wrap">
                 Jiwakita
               </div>
@@ -281,7 +290,7 @@ export default function Home() {
                 </RippleButton>
               </div>
             </div>
-            <div className="order-2 xl:order-1">
+            <div className="order-2 xl:order-1" data-aos="fade-right">
               <SimpleCard_V5>
                 <img src="jiwakita.png" alt="" />
               </SimpleCard_V5>
@@ -291,7 +300,7 @@ export default function Home() {
 
         <div className="mt-10">
           <div className="flex justify-center">
-            <div
+            <div data-aos="fade-up"
               className={cn(
                 "inline-flex items-center group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
               )}
@@ -305,7 +314,7 @@ export default function Home() {
           </div>
 
           <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-10 body-light text-lg mt-10">
-            <div>
+            <div data-aos="fade-right">
               <div className="flex flex-col flex-wrap">
                 Kerjo Kidul Village Website
               </div>
@@ -315,6 +324,9 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 mt-5 body-light text-sm">
                 <div className="bg-gray-200 dark:bg-zinc-800 dark:text-white rounded-full text-black items-center justify-center flex px-3 py-1.5">
                   Website
+                </div>
+                <div className="bg-gray-200 dark:bg-zinc-800 dark:text-white rounded-full text-black items-center justify-center flex px-3 py-1.5">
+                  Full-Stack Application
                 </div>
                 <div className="bg-gray-200 dark:bg-zinc-800 dark:text-white rounded-full text-black items-center justify-center flex px-3 py-1.5">
                   Community Connection
@@ -332,16 +344,88 @@ export default function Home() {
                     Live Preview
                   </LinkPreview>{" "}
                 </RainbowButton>
+                <RippleButton rippleColor="#ADD8E6">
+                  <Link
+                    href="https://github.com/hanifnrh/kerjokidul"
+                    target="_blank"
+                    className="text-sm lg:text-lg"
+                  >
+                    Github
+                  </Link>
+                </RippleButton>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-left">
               <SimpleCard_V5>
                 <img src="kerjokidul.png" alt="" />
               </SimpleCard_V5>
             </div>
           </div>
         </div>
-        <div className="w-full rounded-xl h-[30rem] overflow-hidden mt-20" id="contact">
+
+        <div className="mt-10">
+          <div className="flex justify-center">
+            <div data-aos="fade-up"
+              className={cn(
+                "inline-flex items-center group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+              )}
+            >
+              <AnimatedShinyText
+                className="px-4 py-1 text-xs sm:text-sm transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"
+              >
+                ⚙️ Course Final Project
+              </AnimatedShinyText>
+            </div>
+          </div>
+
+          <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-10 body-light text-lg mt-10">
+            <div className="order-1 xl:order-2" data-aos="fade-left">
+              <div className="flex flex-col flex-wrap">
+                Clipvision
+              </div>
+              <div className="body-bold text-2xl lg:text-5xl mt-2">
+                Easy Video Access
+              </div>
+              <div className="flex flex-wrap gap-2 mt-5 body-light text-sm">
+                <div className="bg-gray-200 dark:bg-zinc-800 dark:text-white rounded-full text-black items-center justify-center flex px-3 py-1.5">
+                  Website
+                </div>
+                <div className="bg-gray-200 dark:bg-zinc-800 dark:text-white rounded-full text-black items-center justify-center flex px-3 py-1.5">
+                  RapidAPI
+                </div>
+                <div className="bg-gray-200 dark:bg-zinc-800 dark:text-white rounded-full text-black items-center justify-center flex px-3 py-1.5">
+                  Youtube Clone
+                </div>
+              </div>
+              <div className="mt-5 text-sm sm:text-lg text-justify">
+                Upgrading my final task for my Mobile Programming Course—PWA in my university, I utilize a few tools and libraries to develop easier access to youtube videos using RapidAPI.
+              </div>
+              <div className="flex flex-row items-center justify-center xl:justify-start gap-3 mt-5">
+                <RainbowButton>
+                  <LinkPreview url="https://clipvision.vercel.app/" className="text-white dark:text-black">
+                    Live Preview
+                  </LinkPreview>{" "}
+                </RainbowButton>
+                <RippleButton rippleColor="#ADD8E6">
+                  <Link
+                    href="https://github.com/hanifnrh/clip-vision"
+                    target="_blank"
+                    className="text-sm lg:text-lg"
+                  >
+                    Github
+                  </Link>
+                </RippleButton>
+              </div>
+            </div>
+            <div className="order-2 xl:order-1" data-aos="fade-right">
+              <SimpleCard_V5>
+                <img src="clipvision.png" alt="" />
+              </SimpleCard_V5>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full rounded-xl h-[30rem] overflow-hidden mt-20" id="contact" data-aos="fade-up">
           <Vortex
             backgroundColor="black"
             className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
