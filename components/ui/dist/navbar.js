@@ -18,6 +18,7 @@ function ResponsiveNavbar() {
         { label: "About", path: "/about" },
         { label: "Portfolio", path: "/#portfolio" },
         { label: "My CV", path: "https://drive.google.com/drive/u/2/folders/19xwOE2Vdpmu_RYAfC6ViOwYgmPzqkVOo" },
+        { label: "Guestbook", path: "/guestbook" },
         { label: "Contact", path: "#contact" },
         { label: "Mode Toggle", path: "#", component: React.createElement(mode_toggle_1.ModeToggle, { key: "mode-toggle" }) },
     ];
@@ -28,7 +29,7 @@ function ResponsiveNavbar() {
                         ? "flex items-center space-x-3 rtl:space-x-reverse p-0 sm:py-2 sm:px-3 md:bg-transparent md:p-0"
                         : "block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 ") },
                     React.createElement("img", { src: "/zielblack.png", className: "h-8 navbar-logo", alt: "Ziel Logo" })),
-                React.createElement(react_1.Button, null,
+                React.createElement(react_1.Button, { className: "hidden lg:block" },
                     React.createElement(Clock, { locale: "en-CA" }))),
             React.createElement("div", { className: "w-full hidden md:block md:w-auto", id: "navbar-default" },
                 React.createElement("div", { className: "items-center flex font-bold flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0" },

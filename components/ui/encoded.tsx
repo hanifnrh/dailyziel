@@ -55,7 +55,7 @@ const EncodedText = () => {
             </Link>
             <Link href="/#PORTFOLIO">
                 <p
-                    data-value="PORTFOLIO"
+                    data-value="Portfolio"
                     onMouseOver={onHover}
                     className="cursor-pointer uppercase text-zinc-500 hover:text-foreground"
                 >
@@ -69,6 +69,15 @@ const EncodedText = () => {
                     className="cursor-pointer uppercase text-zinc-500 hover:text-foreground"
                 >
                     CV
+                </p>
+            </Link>
+            <Link href="/guestbook">
+                <p
+                    data-value="Guestbook"
+                    onMouseOver={onHover}
+                    className="cursor-pointer uppercase text-zinc-500 hover:text-foreground"
+                >
+                    GUESTBOOK
                 </p>
             </Link>
             <Link href="#contact">

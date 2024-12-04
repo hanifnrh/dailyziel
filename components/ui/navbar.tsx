@@ -28,6 +28,7 @@ export default function ResponsiveNavbar() {
         { label: "About", path: "/about" },
         { label: "Portfolio", path: "/#portfolio" },
         { label: "My CV", path: "https://drive.google.com/drive/u/2/folders/19xwOE2Vdpmu_RYAfC6ViOwYgmPzqkVOo" },
+        { label: "Guestbook", path: "/guestbook" },
         { label: "Contact", path: "#contact" },
         { label: "Mode Toggle", path: "#", component: <ModeToggle key="mode-toggle" /> },
     ];
@@ -52,7 +53,7 @@ export default function ResponsiveNavbar() {
                             alt="Ziel Logo"
                         />
                     </Link>
-                    <Button>
+                    <Button className="hidden lg:block">
                         <Clock locale="en-CA" />
                     </Button>
                 </div>
