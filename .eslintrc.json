@@ -6,6 +6,6 @@
     "prefer-const": "off",
     "@typescript-eslint/no-unused-expressions": "off",
     "@typescript-eslint/no-require-imports": "off",
-    "@typescript-eslint/no-display-name": "off"
+    "@typescript-eslint/display-name": "off"
   }
 }
