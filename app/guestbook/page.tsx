@@ -21,7 +21,7 @@ const Page = async () => {
     const { data: user, error } = await supabase.auth.getUser();
 
     return (
-        <TracingBeam className="">
+        <TracingBeam>
             <section
                 id="guestbook"
                 className="flex w-full max-w-sm mx-auto grow flex-col gap-y-4 md:gap-y-8 lg:gap-y-12"
