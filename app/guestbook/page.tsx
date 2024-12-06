@@ -24,7 +24,7 @@ const Page = async () => {
         <TracingBeam className="">
             <section
                 id="guestbook"
-                className="flex h-full w-full max-w-sm mx-auto grow flex-col gap-y-4 md:gap-y-8 lg:gap-y-12"
+                className="flex w-full max-w-sm mx-auto grow flex-col gap-y-4 md:gap-y-8 lg:gap-y-12"
             >
                 <BlurIn className="flex h-full w-full flex-col justify-center items-center">
                     <div className="md:pad-x relative flex h-auto flex-col">

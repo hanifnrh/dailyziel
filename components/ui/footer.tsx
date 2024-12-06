@@ -18,8 +18,8 @@ export default function Footer() {
         AOS.init({})
     }, [])
     return (
-        <div id="contact" className="w-full flex flex-col items-center justify-center">
-            <div className="w-full sm:w-fit sm:rounded-full h-[30rem] overflow-hidden mt-20" data-aos="fade-up">
+        <div id="contact" className="flex flex-col items-center justify-center">
+            <div className="w-fit sm:rounded-full h-[30rem] overflow-hidden mt-20" data-aos="fade-up">
                 <Vortex
                     backgroundColor="black"
                     className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"

@@ -133,7 +133,7 @@ export default function Home() {
                 <BlurIn
                     className="grid grid-cols-1 xl:grid-cols-2 items-center justify-center gap-4"
                 >
-                    <div className="body" data-aos="fade-right">
+                    <div className="body overflow-x-hidden" data-aos="fade-right">
                         <div className="body-bold text-center xl:text-start justify-center xl:justify-start text-xl md:text-4xl block">
                             Undergraduate Computer Engineering
                             <span className="text-sky-700 inline-flex items-center mr-2 ml-2">

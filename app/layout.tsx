@@ -32,8 +32,8 @@ export default function RootLayout({
               <ResponsiveNavbar />
               <div className="max-w-screen-2xl mx-auto" >
                 {children}
+                <Footer />
               </div>
-              <Footer />
               <Menu></Menu>
             </MenuProvider>
             <Toaster></Toaster>

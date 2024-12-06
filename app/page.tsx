@@ -45,7 +45,7 @@ export default function Home() {
   }, [])
   return (
     <main>
-      <div className="flex flex-col items-center justify-center p-8 pb-20 gap-16 sm:p-20">
+      <div className="overflow-x-hidden flex flex-col items-center justify-center p-8 pb-20 gap-16 sm:p-20">
         <div className="flex flex-col gap-8 items-center">
           <Particles
             className="absolute inset-0"
@@ -127,7 +127,7 @@ export default function Home() {
         <BrandMarquee></BrandMarquee>
       </BlurIn>
 
-      <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
+      <div className="overflow-x-hidden flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
         <div className="body text-lg mt-10 border-b border-black" data-aos="fade-up">
           ABOUT
         </div>
@@ -148,7 +148,7 @@ export default function Home() {
 
 
             <div className="mt-10 text-center xl:text-justify text-sm md:text-lg">
-              A passionate UI/UX designer and full-stack web developer dedicated to crafting exceptional digital experiences. With a love for design and a knack for building visually stunning and functional creations, I thrive on bringing ideas to life—merging creativity with code to make every project a masterpiece.
+              Hi I&apos;m Nurrahmat Hanif, I go by Ziel. A passionate UI/UX designer and full-stack web developer dedicated to crafting exceptional digital experiences. With a love for design and a knack for building visually stunning and functional creations. Currently enrolling as Computer Engineering Student in Universitas Diponegoro, Indonesia. Based in Jakarta & Semarang, Indonesia.
             </div>
             <div className="mt-10">
               <SocialsDock></SocialsDock>
@@ -422,6 +422,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
     </main>
   );
 }

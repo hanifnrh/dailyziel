@@ -1,13 +1,12 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import { cn } from "@/lib/utils";
 import {
   motion,
-  useTransform,
   useScroll,
-  useVelocity,
   useSpring,
+  useTransform
 } from "framer-motion";
-import { cn } from "@/lib/utils";
+import React, { useEffect, useRef, useState } from "react";
 
 export const TracingBeam = ({
   children,
@@ -76,7 +75,7 @@ export const TracingBeam = ({
               borderColor:
                 scrollYProgress.get() > 0 ? "white" : "var(--emerald-600)",
             }}
-            className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
+            className="h-2 w-2 rounded-full border border-neutral-300 bg-white"
           />
         </motion.div>
         <svg
