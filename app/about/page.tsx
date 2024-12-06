@@ -129,7 +129,7 @@ export default function Home() {
 
     return (
         <main>
-            <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
+            <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20 mt-14 sm:mt-20">
                 <BlurIn
                     className="grid grid-cols-1 xl:grid-cols-2 items-center justify-center gap-4"
                 >

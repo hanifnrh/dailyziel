@@ -7,6 +7,7 @@ import { BrandMarquee } from "@/components/ui/brandmarquee";
 import { SimpleCard_V5 } from "@/components/ui/cardv5";
 import { Cover } from "@/components/ui/cover";
 import { FadeText } from "@/components/ui/fade-text";
+import KbdButton from "@/components/ui/kbd";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { useMenu } from "@/components/ui/menuprovider";
 import Particles from "@/components/ui/particles";
@@ -45,8 +46,8 @@ export default function Home() {
   }, [])
   return (
     <main>
-      <div className="overflow-x-hidden flex flex-col items-center justify-center p-8 pb-20 gap-16 sm:p-20">
-        <div className="flex flex-col gap-8 items-center">
+      <div className="overflow-x-hidden flex flex-col items-center justify-center p-8 pb-20 gap-16 sm:p-20 mt-14 sm:mt-20">
+        <div className="relative flex flex-col gap-8 items-center">
           <Particles
             className="absolute inset-0"
             quantity={100}
@@ -59,7 +60,7 @@ export default function Home() {
           </div>
           <div>
             <BlurIn
-              className="text-4xl md:text-4xl lg:text-6xl title-head max-w-7xl mx-auto text-center relative z-10 py-6 lg:px-40 bg-clip-text text-transparent bg-[linear-gradient(107deg,#000000_1.10%,#000000_60.18%,#ae04ba_80.100%)] dark:bg-[linear-gradient(107deg,#ffffff_1.10%,#ffffff_60.18%,#ae04ba_105.75%)]"
+              className="relative text-4xl md:text-4xl lg:text-6xl title-head max-w-7xl mx-auto text-center z-10 py-6 lg:px-40 bg-clip-text text-transparent bg-[linear-gradient(107deg,#000000_1.10%,#000000_60.18%,#ae04ba_80.100%)] dark:bg-[linear-gradient(107deg,#ffffff_1.10%,#ffffff_60.18%,#ae04ba_105.75%)]"
             >
               Hi I&apos;m Ziel, a <Cover className="bg-clip-text bg-purple-950 dark:bg-white inline-block relative z-20 group-hover/cover:bg-white transition duration-200">creative</Cover> developer and designer
             </BlurIn>
@@ -101,9 +102,9 @@ export default function Home() {
                   setTheme(theme === "light" ? "dark" : "light"); // Mengganti tema
                 }}
               >
-                <kbd className="mr-1 p-1 pointer-events-none inline-flex h-fit select-none items-center gap-1 rounded border bg-purple-100 dark:bg-zinc-900 px-1.5 text-[10px] text-black dark:text-muted-foreground opacity-100 text-base body-light">
-                  <span className="text-sm">⌘</span>D
-                </kbd>
+                <KbdButton className="text-black dark:text-white">
+                  ⌘ Ctrl + D
+                </KbdButton>
                 Theme
               </a>
 
@@ -111,9 +112,9 @@ export default function Home() {
                 className="flex items-center gap-2 justify-center text-base body-light tracking-normal cursor-pointer"
                 onClick={openMenu}
               >
-                <kbd className="mr-1 p-1 pointer-events-none inline-flex h-fit select-none items-center gap-1 rounded border bg-purple-100 dark:bg-zinc-900 px-1.5 text-[10px] text-black dark:text-muted-foreground opacity-100 text-base body-light">
-                  <span className="text-sm">⌘</span>Q
-                </kbd>
+                <KbdButton className="text-black dark:text-white">
+                  ⌘ Ctrl + Q
+                </KbdButton>
                 Menu
               </a>
             </div>

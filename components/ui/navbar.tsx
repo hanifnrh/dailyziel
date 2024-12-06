@@ -35,10 +35,10 @@ export default function ResponsiveNavbar() {
 
     return (
         <div
-            className={`${GeistMono.className} sticky top-0 w-full z-50 bg-white dark:bg-zinc-950`}
+            className={`${GeistMono.className} fixed top-0 z-50 w-full bg-transparent backdrop-blur-lg max-w-screen-2xl`}
         >
             {/* Navbar for large screens */}
-            <nav className="max-w-screen-xl flex-wrap items-center justify-between mx-auto p-4 hidden md:flex">
+            <nav className="flex-wrap items-center justify-between p-4 hidden md:flex px-20">
                 <div className="left-nav flex items-center space-x-4">
                     <Link
                         href="/"

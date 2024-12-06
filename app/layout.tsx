@@ -29,8 +29,8 @@ export default function RootLayout({
         >
           <NextUIProvider>
             <MenuProvider>
-              <ResponsiveNavbar />
               <div className="max-w-screen-2xl mx-auto" >
+                <ResponsiveNavbar />
                 {children}
                 <Footer />
               </div>

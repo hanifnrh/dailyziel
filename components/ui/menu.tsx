@@ -1,19 +1,16 @@
 "use client";
 
-import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
+import ButtonCopy from "@/components/ui/buttoncopy";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { IoIosCalendar } from "react-icons/io";
-import { Button } from "./button";
+import React, { useEffect } from "react";
+import ButtonBook from "./buttonbook";
+import ButtonClose from "./buttonclose";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "./dialog";
-import { useMenu } from "./menuprovider"; // Import context
+import { useMenu } from "./menuprovider";
 import { ModeToggle } from "./mode-toggle";
-import { useToast } from "./use-toast";
 
 const Menu: React.FC = () => {
-    const { isDialogOpen, closeMenu, openMenu } = useMenu(); // Access state from context
-    const { toast } = useToast();
-    const [copied, setCopied] = useState(false);
+    const { isDialogOpen, closeMenu, openMenu } = useMenu();
     const emailToCopy = "dailyziel@gmail.com";
 
     useEffect(() => {
@@ -29,48 +26,29 @@ const Menu: React.FC = () => {
         };
     }, [openMenu]);
 
-    const copyToClipboard = async () => {
-        try {
-            await navigator.clipboard.writeText(emailToCopy);
-            setCopied(true);
-            toast({
-                title: "Copied to Clipboard",
-                description: `"${emailToCopy}" copied successfully.`,
-            });
-            setTimeout(() => setCopied(false), 3000);
-        } catch (err) {
-            console.error("Failed to copy:", err);
-            toast({
-                title: "Copy Failed",
-                description: "Failed to copy text to clipboard.",
-            });
-        }
-    };
-
     return (
         <Dialog open={isDialogOpen} onOpenChange={closeMenu}>
-            <DialogContent className="body sm:max-w-md flex flex-col">
+            <DialogContent className="body sm:max-w-md flex flex-col items-center justify-center">
                 <DialogHeader>
                     <DialogTitle className="text-center">Menu</DialogTitle>
                     <DialogDescription className="text-center">Get in touch with me</DialogDescription>
                 </DialogHeader>
                 <div className="w-full flex flex-col items-center justify-center gap-y-2">
                     <div className="flex justify-center w-48">
-                        <Button
-                            variant="outline"
-                            className="body-light w-full max-w-xs justify-center"
-                            onClick={copyToClipboard}
-                        >
-                            <EnvelopeOpenIcon className="mr-2 h-4 w-4" /> Copy my email
-                        </Button>
+                        {/* Use the Btn06 button */}
+                        <ButtonCopy
+                            textToCopy={emailToCopy}
+                            successDuration={3000}
+                            className="w-full max-w-xs"
+                        />
                     </div>
 
-                    <div className="flex justify-center w-48">
-                        <Link href="#contact">
+                    <div className="flex items-center justify-center w-48">
+                        <Link href="#contact" className="w-full">
                             <DialogClose asChild>
-                                <Button variant="outline" className="body-light w-full max-w-xs justify-center">
-                                    <IoIosCalendar className="mr-2 h-4 w-4" /> Book my service
-                                </Button>
+                                <ButtonBook
+                                    className="w-full max-w-xs"
+                                />
                             </DialogClose>
                         </Link>
                     </div>
@@ -81,11 +59,11 @@ const Menu: React.FC = () => {
                 <div className="flex justify-center">
                     <ModeToggle />
                 </div>
-                <DialogFooter className="sm:justify-center">
+                <DialogFooter className="justify-center items-center w-48">
                     <DialogClose asChild>
-                        <Button variant={"purple"} type="button">
-                            Close
-                        </Button>
+                        <ButtonClose
+                            className="w-full max-w-xs"
+                        />
                     </DialogClose>
                 </DialogFooter>
             </DialogContent>
