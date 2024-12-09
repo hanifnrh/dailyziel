@@ -98,8 +98,8 @@ export default function Home() {
               <a
                 className="flex items-center gap-2 justify-center text-base body-light tracking-normal cursor-pointer"
                 onClick={(e) => {
-                  e.preventDefault(); // Mencegah perilaku default href="#"
-                  setTheme(theme === "light" ? "dark" : "light"); // Mengganti tema
+                  e.preventDefault();
+                  setTheme(theme === "light" ? "dark" : "light");
                 }}
               >
                 <KbdButton className="text-black dark:text-white">

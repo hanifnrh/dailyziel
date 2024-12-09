@@ -53,7 +53,7 @@ const EncodedText = () => {
                     ABOUT
                 </p>
             </Link>
-            <Link href="/#PORTFOLIO">
+            <Link href="/#portfolio">
                 <p
                     data-value="Portfolio"
                     onMouseOver={onHover}
