@@ -160,7 +160,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20" id="PORTFOLIO">
+      <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20" id="portfolio">
         <div className="body text-lg mt-10 border-b border-black" data-aos="fade-up">
           PORTFOLIO
         </div>
@@ -338,7 +338,7 @@ export default function Home() {
               </div>
               <div className="flex flex-row items-center justify-center xl:justify-start gap-3 mt-5">
                 <RainbowButton>
-                  <LinkPreview url="https://www.kerjokidul.id/" className="text-white dark:text-black">
+                  <LinkPreview url="https://www.kerjokidul.id/" className="text-sm lg:text-lg text-white dark:text-black">
                     Live Preview
                   </LinkPreview>{" "}
                 </RainbowButton>
@@ -400,7 +400,7 @@ export default function Home() {
               </div>
               <div className="flex flex-row items-center justify-center xl:justify-start gap-3 mt-5">
                 <RainbowButton>
-                  <LinkPreview url="https://clipvision.vercel.app/" className="text-white dark:text-black">
+                  <LinkPreview url="https://clipvision.vercel.app/" className="text-sm lg:text-lg text-white dark:text-black">
                     Live Preview
                   </LinkPreview>{" "}
                 </RainbowButton>

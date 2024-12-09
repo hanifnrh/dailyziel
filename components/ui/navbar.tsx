@@ -30,7 +30,7 @@ export default function ResponsiveNavbar() {
         { label: "My CV", path: "https://drive.google.com/drive/u/2/folders/19xwOE2Vdpmu_RYAfC6ViOwYgmPzqkVOo" },
         { label: "Guestbook", path: "/guestbook" },
         { label: "Contact", path: "#contact" },
-        { label: "Mode Toggle", path: "#", component: <ModeToggle key="mode-toggle" /> },
+        { label: "Mode Toggle", path: "", component: <ModeToggle key="mode-toggle" /> },
     ];
 
     return (
