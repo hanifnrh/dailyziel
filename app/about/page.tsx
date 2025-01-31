@@ -7,6 +7,7 @@ import { Timeline } from "@/components/ui/timeline";
 import "animate.css/animate.compat.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
 import { CgDesignmodo } from "react-icons/cg";
@@ -128,47 +129,60 @@ export default function Home() {
     ];
 
     return (
-        <main>
-            <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20 mt-14 sm:mt-20">
-                <BlurIn
-                    className="grid grid-cols-1 xl:grid-cols-2 items-center justify-center gap-4"
-                >
-                    <div className="body overflow-x-hidden" data-aos="fade-right">
-                        <div className="body-bold text-center xl:text-start justify-center xl:justify-start text-xl md:text-4xl block">
-                            Undergraduate Computer Engineering
-                            <span className="text-sky-700 inline-flex items-center mr-2 ml-2">
-                                Student <GiGraduateCap className="ml-1" />
-                            </span>, Passionate
-                            <span className="text-indigo-500 inline-flex items-center mr-2 ml-2">
-                                Designer <CgDesignmodo className="ml-1" />
-                            </span>, and Creative
-                            <span className="text-fuchsia-700 inline-flex items-center ml-2">
-                                Developer <FaCode className="ml-1" />
-                            </span>
+        <>
+            <Head>
+                <title>Ziel - Creative Developer</title>
+                <meta name="description" content="Hello I'm Ziel, a web developer mainly using Next.js based in Jakarta & Semarang, Indonesia." />
+                <meta name="keywords" content="web developer, front end web developer, dailyziel, ziel, ziel developer, next js developer, ui ux designer, ui/ux designer, jasa web designer, jasa landing page" />
+                <meta name="author" content="Ziel - Creative Developer" />
+                <meta property="og:title" content="" />
+                <meta property="og:description" content="Hello I'm Ziel, a web developer mainly using Next.js based in Jakarta & Semarang, Indonesia." />
+                <meta property="og:image" content="/brands/ziel-logo.png" />
+                <meta property="og:type" content="website" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </Head>
+            <main>
+                <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20 mt-14 sm:mt-20">
+                    <BlurIn
+                        className="grid grid-cols-1 xl:grid-cols-2 items-center justify-center gap-4"
+                    >
+                        <div className="body overflow-x-hidden" data-aos="fade-right">
+                            <div className="body-bold text-center xl:text-start justify-center xl:justify-start text-xl md:text-4xl block">
+                                Undergraduate Computer Engineering
+                                <span className="text-sky-700 inline-flex items-center mr-2 ml-2">
+                                    Student <GiGraduateCap className="ml-1" />
+                                </span>, Passionate
+                                <span className="text-indigo-500 inline-flex items-center mr-2 ml-2">
+                                    Designer <CgDesignmodo className="ml-1" />
+                                </span>, and Creative
+                                <span className="text-fuchsia-700 inline-flex items-center ml-2">
+                                    Developer <FaCode className="ml-1" />
+                                </span>
+                            </div>
+                            <div className="mt-10 text-center xl:text-justify text-sm md:text-lg">
+                                Hi I&apos;m Nurrahmat Hanif, I go by Ziel. A passionate UI/UX designer and full-stack web developer dedicated to crafting exceptional digital experiences. With a love for design and a knack for building visually stunning and functional creations. Currently enrolling as Computer Engineering Student in Universitas Diponegoro, Indonesia. Based in Jakarta & Semarang, Indonesia.
+                            </div>
+                            <div className="mt-10">
+                                <SocialsDock></SocialsDock>
+                            </div>
                         </div>
-                        <div className="mt-10 text-center xl:text-justify text-sm md:text-lg">
-                            Hi I&apos;m Nurrahmat Hanif, I go by Ziel. A passionate UI/UX designer and full-stack web developer dedicated to crafting exceptional digital experiences. With a love for design and a knack for building visually stunning and functional creations. Currently enrolling as Computer Engineering Student in Universitas Diponegoro, Indonesia. Based in Jakarta & Semarang, Indonesia.
+                        <div data-aos="fade-left">
+                            <AboutCard></AboutCard>
                         </div>
-                        <div className="mt-10">
-                            <SocialsDock></SocialsDock>
-                        </div>
-                    </div>
-                    <div data-aos="fade-left">
-                        <AboutCard></AboutCard>
-                    </div>
-                </BlurIn>
-            </div>
-            <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
-                <BlurIn>
-                    <Timeline data={data} />
-                </BlurIn>
-                <div className="w-full text-center body-bold text-2xl md:text-4xl py-20">
-                    <div data-aos="fade-up">
-                        My Stacks:
-                    </div>
-                    <BrandMarquee></BrandMarquee>
+                    </BlurIn>
                 </div>
-            </div>
-        </main>
+                <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
+                    <BlurIn>
+                        <Timeline data={data} />
+                    </BlurIn>
+                    <div className="w-full text-center body-bold text-2xl md:text-4xl py-20">
+                        <div data-aos="fade-up">
+                            My Stacks:
+                        </div>
+                        <BrandMarquee></BrandMarquee>
+                    </div>
+                </div>
+            </main>
+        </>
     );
 }

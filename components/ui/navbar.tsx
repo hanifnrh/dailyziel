@@ -48,7 +48,7 @@ export default function ResponsiveNavbar() {
                             }`}
                     >
                         <img
-                            src="/zielblack.png"
+                            src="/brands/ziel-logo.png"
                             className="h-8 navbar-logo"
                             alt="Ziel Logo"
                         />
@@ -83,7 +83,7 @@ export default function ResponsiveNavbar() {
                                 <Clock locale="en-CA" />
                             </Button>
                             <img
-                                src="/zielblack.png"
+                                src="/brands/ziel-logo.png"
                                 className="h-8 navbar-logo"
                                 alt="Ziel Logo"
                             />

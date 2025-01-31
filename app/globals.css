@@ -171,7 +171,7 @@ html, body {
 }
 
 .dark .navbar-logo {
-  content: url('/zielwhite.png');
+  content: url('/brands/ziel-logo-white.png');
   /* Dark mode logo */
 }
 

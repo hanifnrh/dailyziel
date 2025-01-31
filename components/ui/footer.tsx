@@ -99,7 +99,7 @@ export default function Footer() {
 
                 </div>
                 <div className={`${GeistMono.className} text-center sm:text-end flex justify-center sm:justify-end items-center`}>
-                    © 2024 Ziel - All Rights Reserved
+                    © 2025 Ziel - All Rights Reserved
                 </div>
             </div>
         </div>

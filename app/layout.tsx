@@ -8,9 +8,31 @@ import { NextUIProvider } from "@nextui-org/react";
 import type { Metadata } from "next";
 import * as React from "react";
 import "./globals.css";
+
 export const metadata: Metadata = {
-  title: "Ziel",
-  description: "Creative developer and designer",
+  metadataBase: new URL("https://www.dailyziel.com"),
+  keywords: [
+    "web developer",
+    "ui ux designer",
+    "ui/ux designer",
+    "front end web developer",
+    "front end developer",
+    "dailyziel",
+    "ziel",
+    "ziel developer",
+    "web designer",
+    "jasa web designer",
+    "next js developer",
+    "jasa web developer",
+  ],
+  title: {
+    default: "Creative Developer and Designer - Ziel",
+    template: "%s - Ziel"
+  },
+  openGraph: {
+    description:
+      "Hello I'm Ziel, a web developer mainly using Next.js based in Jakarta & Semarang, Indonesia."
+  }
 };
 
 export default function RootLayout({
