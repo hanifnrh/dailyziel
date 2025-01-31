@@ -10,7 +10,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { HeroHighlight, Highlight } from "./hero-highlight";
-import { Vortex } from "./vortex";
+import Ripple from "./ripple";
 
 
 export default function Footer() {
@@ -19,11 +19,11 @@ export default function Footer() {
     }, [])
     return (
         <div id="contact" className="flex flex-col items-center justify-center">
-            <div className="w-fit sm:rounded-full h-[30rem] overflow-hidden mt-20" data-aos="fade-up">
-                <Vortex
-                    backgroundColor="black"
+            <div className="w-fit sm:rounded-full h-[40rem] overflow-hidden mt-20" data-aos="fade-up">
+                <div
                     className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
                 >
+                    <Ripple/>
                     <HeroHighlight>
                         <motion.h1
                             initial={{
@@ -38,7 +38,7 @@ export default function Footer() {
                                 duration: 0.5,
                                 ease: [0.4, 0.0, 0.2, 1],
                             }}
-                            className="title-head text-3xl px-4 md:text-4xl lg:text-5xl font-bold text-white max-w-3xl leading-relaxed lg:leading-snug text-center mx-auto "
+                            className="title-head text-3xl px-4 md:text-4xl lg:text-5xl font-bold text-black dark:text-white max-w-3xl leading-relaxed lg:leading-snug text-center mx-auto "
                         >
                             Interested in working with me?{" "}
                             <Highlight className="text-black dark:text-white">
@@ -51,7 +51,7 @@ export default function Footer() {
                             </Highlight>
                         </motion.h1>
                     </HeroHighlight>
-                </Vortex>
+                </div>
             </div>
             <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-y-10 justify-between px-8 md:px-10 xl:px-20 py-20">
                 <div className="justify-center sm:justify-start items-center flex">
