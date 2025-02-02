@@ -102,6 +102,7 @@ html, body {
     url('/fonts/GoogleSans-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -110,6 +111,7 @@ html, body {
     url('/fonts/GoogleSans-Medium.ttf') format('truetype');
   font-weight: medium;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -118,6 +120,7 @@ html, body {
     url('/fonts/GoogleSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -126,6 +129,7 @@ html, body {
     url('/fonts/GoogleSans-Regular.ttf') format('truetype');
   font-weight: light;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -134,6 +138,7 @@ html, body {
     url('/fonts/GoogleSans-Italic.ttf') format('truetype');
   font-weight: light;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -144,6 +149,7 @@ html, body {
     url("https://db.onlinewebfonts.com/t/cec88e5a4cf367c4620cd23c5a184439.woff")format("woff"),
     url("https://db.onlinewebfonts.com/t/cec88e5a4cf367c4620cd23c5a184439.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/cec88e5a4cf367c4620cd23c5a184439.svg#PolySans Median")format("svg");
+  font-display: swap;
 }
 
 .title-head {
@@ -180,7 +186,7 @@ html, body {
   -webkit-background-clip: text;
 }
 
-.transparenttext{
+.transparenttext {
   color: transparent;
   -webkit-text-fill-color: transparent;
 }

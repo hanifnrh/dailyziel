@@ -25,6 +25,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ChevronRight } from "lucide-react";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { CgDesignmodo } from "react-icons/cg";
 import { FaCode } from "react-icons/fa";
@@ -229,7 +230,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <img src="/images/academiku.png" alt="Academiku Prototype" />
+                  <Image src="/images/academiku.png" alt="Academiku Prototype" width={500} height={500} className="w-full h-full" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -297,7 +298,7 @@ export default function Home() {
               </div>
               <div className="order-2 xl:order-1" data-aos="fade-right">
                 <SimpleCard_V5>
-                  <img src="/images/jiwakita.png" alt="Jiwakita Prototype" />
+                  <Image src="/images/jiwakita.png" alt="Jiwakita Prototype" width={500} height={500} className="w-full h-full" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -363,7 +364,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <img src="/images/kerjokidul.png" alt="Kerjo Kidul Web" />
+                  <Image src="/images/kerjokidul.png" alt="Kerjo Kidul Web" width={500} height={500} className="w-full h-full"/>
                 </SimpleCard_V5>
               </div>
             </div>
@@ -426,7 +427,7 @@ export default function Home() {
               </div>
               <div className="order-2 xl:order-1" data-aos="fade-right">
                 <SimpleCard_V5>
-                  <img src="/images/clipvision.png" alt="Clipvision Web" />
+                  <Image src="/images/clipvision.png" alt="Clipvision Web" width={500} height={500} className="w-full h-full"/>
                 </SimpleCard_V5>
               </div>
             </div>
@@ -492,7 +493,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <img src="/images/ecofix.png" alt="Ecofix Page" />
+                  <Image src="/images/ecofix.png" alt="Ecofix Page" width={500} height={500} className="w-full h-full"/>
                 </SimpleCard_V5>
               </div>
             </div>

@@ -12,6 +12,7 @@ import {
 } from "@nextui-org/react";
 import { GeistMono } from "geist/font/mono";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ModeToggle } from "./mode-toggle";
@@ -42,16 +43,18 @@ export default function ResponsiveNavbar() {
                 <div className="left-nav flex items-center space-x-4">
                     <Link
                         href="/"
-                        rel="canonical" 
+                        rel="canonical"
                         className={`flex items-center ${currentPath === "/"
                             ? "flex items-center space-x-3 rtl:space-x-reverse p-0 sm:py-2 sm:px-3 md:bg-transparent md:p-0"
                             : "block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 "
                             }`}
                     >
-                        <img
+                        <Image
                             src="/brands/ziel-logo.png"
                             className="h-8 navbar-logo"
                             alt="Ziel Logo"
+                            width={200}
+                            height={200}
                         />
                     </Link>
                     <Button className="hidden lg:block">
@@ -83,10 +86,12 @@ export default function ResponsiveNavbar() {
                             <Button className="hidden sm:block">
                                 <Clock locale="en-CA" />
                             </Button>
-                            <img
+                            <Image
                                 src="/brands/ziel-logo.png"
                                 className="h-8 navbar-logo"
                                 alt="Ziel Logo"
+                                width={200}
+                                height={200}
                             />
                         </Link>
                     </NavbarBrand>
@@ -107,7 +112,7 @@ export default function ResponsiveNavbar() {
                                             : "foreground"
                                 }
                                 href={item.path === "#" ? "#" : item.path}
-                                rel="canonical" 
+                                rel="canonical"
                                 size="lg"
                             >
                                 {item.component || item.label}
