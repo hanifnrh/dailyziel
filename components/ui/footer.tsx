@@ -25,7 +25,7 @@ export default function Footer() {
                 >
                     <Ripple/>
                     <HeroHighlight>
-                        <motion.h1
+                        <motion.h3
                             initial={{
                                 opacity: 0,
                                 y: 20,
@@ -49,7 +49,7 @@ export default function Footer() {
                                     Hit me up!
                                 </Link>
                             </Highlight>
-                        </motion.h1>
+                        </motion.h3>
                     </HeroHighlight>
                 </div>
             </div>
