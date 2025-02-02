@@ -44,7 +44,7 @@ const EncodedText = () => {
 
     return (
         <div  className={`${GeistMono.className} flex flex-col md:flex-row gap-x-5 gap-y-3 items-center`}>
-            <Link href="/about">
+            <Link href="/about" rel="canonical" >
                 <p
                     data-value="About"
                     onMouseOver={onHover}
@@ -53,7 +53,7 @@ const EncodedText = () => {
                     ABOUT
                 </p>
             </Link>
-            <Link href="/#portfolio">
+            <Link href="/#portfolio" rel="canonical" >
                 <p
                     data-value="Portfolio"
                     onMouseOver={onHover}
@@ -62,7 +62,7 @@ const EncodedText = () => {
                     PORTFOLIO
                 </p>
             </Link>
-            <Link href="https://drive.google.com/file/d/1YVITGrnvwSLOR7WKBRs4cAaRevdYVNvf/view?usp=sharing">
+            <Link href="https://drive.google.com/file/d/1YVITGrnvwSLOR7WKBRs4cAaRevdYVNvf/view?usp=sharing" rel="canonical" >
                 <p
                     data-value="CV"
                     onMouseOver={onHover}
@@ -71,7 +71,7 @@ const EncodedText = () => {
                     CV
                 </p>
             </Link>
-            <Link href="/guestbook">
+            <Link href="/guestbook" rel="canonical" >
                 <p
                     data-value="Guestbook"
                     onMouseOver={onHover}
@@ -80,7 +80,7 @@ const EncodedText = () => {
                     GUESTBOOK
                 </p>
             </Link>
-            <Link href="#contact">
+            <Link href="#contact" rel="canonical" >
                 <p
                     data-value="Contact"
                     onMouseOver={onHover}

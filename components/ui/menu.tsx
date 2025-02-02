@@ -44,7 +44,7 @@ const Menu: React.FC = () => {
                     </div>
 
                     <div className="flex items-center justify-center w-48">
-                        <Link href="#contact" className="w-full">
+                        <Link href="#contact" className="w-full" rel="canonical" >
                             <DialogClose asChild>
                                 <ButtonBook
                                     className="w-full max-w-xs"

@@ -1,16 +1,16 @@
 "use client";
+import { cn } from "@/lib/utils";
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
+import {
+    AnimatePresence,
+    motion,
+    useMotionValue,
+    useSpring,
+} from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { encode } from "qss";
 import React from "react";
-import {
-  AnimatePresence,
-  motion,
-  useMotionValue,
-  useSpring,
-} from "framer-motion";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 type LinkPreviewProps = {
   children: React.ReactNode;
@@ -135,6 +135,7 @@ export const LinkPreview = ({
                   href={url}
                   className="block p-1 bg-white border-2 border-transparent shadow rounded-xl hover:border-neutral-200 dark:hover:border-neutral-800"
                   style={{ fontSize: 0 }}
+                  rel="canonical"
                 >
                   <Image
                     src={isStatic ? imageSrc : src}

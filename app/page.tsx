@@ -70,7 +70,7 @@ export default function Home() {
               show: { transition: { delay: 0.5 } },
             }}>
               <div className="flex gap-4 items-center flex-col sm:flex-row">
-                <Link href="#contact">
+                <Link href="#contact" rel="canonical" >
                   <ShimmerButton className="body shadow-2xl h-full">
                     <span className="whitespace-pre-wrap text-center text-sm leading-none tracking-tight text-white dark:text-black dark:from-white dark:to-white lg:text-lg">
                       Contact Me
@@ -82,6 +82,7 @@ export default function Home() {
                     className="flex justify-center items-center text-center group"
                     href="https://github.com/hanifnrh"
                     target="_blank"
+                    rel="canonical" 
                   >
                     🔮
                     <span
@@ -208,6 +209,7 @@ export default function Home() {
                       href="https://www.scribd.com/document/712454157/Academiku-Prototipe-Aplikasi-untuk-Mempermudah-Siswa-dan-Pengajar-dalam-Kegiatan-Belajar-Mengajar"
                       target="_blank"
                       className="text-sm lg:text-lg text-white dark:text-black"
+                      rel="canonical" 
                     >
                       Case Study
                     </Link>
@@ -217,6 +219,7 @@ export default function Home() {
                       href="https://www.figma.com/proto/4dpPY9tTTpaERumMd80OqI/Academiku?page-id=0%3A1&node-id=90-837&viewport=505%2C2553%2C0.87&t=tt3fxops6J46CJzg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=290%3A1758&show-proto-sidebar=1"
                       target="_blank"
                       className="text-sm lg:text-lg"
+                      rel="canonical" 
                     >
                       Prototype
                     </Link>
@@ -274,6 +277,7 @@ export default function Home() {
                       href="https://www.scribd.com/document/712451093/Aplikasi-Jiwakita-Prototipe-Aplikasi-Kesehatan-Mental-dalam-Menghadapi-Permasalahan-Kesehatan-Mental-di-Era-Modern"
                       target="_blank"
                       className="text-sm lg:text-lg text-white dark:text-black"
+                      rel="canonical" 
                     >
                       Case Study
                     </Link>
@@ -283,6 +287,7 @@ export default function Home() {
                       href="https://www.figma.com/proto/JOBOHqk9w13ZWEth8bbTTZ/jiwakita?page-id=170%3A2702&node-id=874-30730&starting-point-node-id=874%3A25000&t=doKBH4JOUhc4Ac5I-1"
                       target="_blank"
                       className="text-sm lg:text-lg"
+                      rel="canonical" 
                     >
                       Prototype
                     </Link>
@@ -348,6 +353,7 @@ export default function Home() {
                       href="https://github.com/hanifnrh/kerjokidul"
                       target="_blank"
                       className="text-sm lg:text-lg"
+                      rel="canonical" 
                     >
                       Github
                     </Link>
@@ -410,6 +416,7 @@ export default function Home() {
                       href="https://github.com/hanifnrh/clip-vision"
                       target="_blank"
                       className="text-sm lg:text-lg"
+                      rel="canonical"
                     >
                       Github
                     </Link>
@@ -475,6 +482,7 @@ export default function Home() {
                       href="https://github.com/gassolution/gas-web"
                       target="_blank"
                       className="text-sm lg:text-lg"
+                      rel="canonical" 
                     >
                       Github
                     </Link>

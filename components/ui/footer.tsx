@@ -45,6 +45,7 @@ export default function Footer() {
                                 <Link
                                     className="text-2xl md:text-4xl lg:text-5xl"
                                     href="mailto:dailyziel@gmail.com"
+                                    rel="canonical"
                                 >
                                     Hit me up!
                                 </Link>
@@ -69,6 +70,7 @@ export default function Footer() {
                         href="https://www.linkedin.com/in/nurrahmat-hanif-635055218/"
                         size="md"
                         target="__blank"
+                        rel="canonical"
                     >
                         <span className="border-b border-black dark:border-white inline-flex">
                             LinkedIn <GoArrowUpRight className="transition-transform duration-200 transform group-hover:translate-y-[-4px]" />
@@ -79,6 +81,7 @@ export default function Footer() {
                         href="https://www.instagram.com/ziel.dev/"
                         size="md"
                         target="__blank"
+                        rel="canonical"
                     >
                         <span className="border-b border-black dark:border-white inline-flex">
                             Instagram <GoArrowUpRight className="transition-transform duration-200 transform group-hover:translate-y-[-4px]" />
@@ -89,6 +92,7 @@ export default function Footer() {
                         href="mailto:dailyziel@gmail.com"
                         size="md"
                         target="__blank"
+                        rel="canonical"
                     >
                         <span className="border-b border-black dark:border-white inline-flex">
                             Email

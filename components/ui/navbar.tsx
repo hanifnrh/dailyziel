@@ -42,6 +42,7 @@ export default function ResponsiveNavbar() {
                 <div className="left-nav flex items-center space-x-4">
                     <Link
                         href="/"
+                        rel="canonical" 
                         className={`flex items-center ${currentPath === "/"
                             ? "flex items-center space-x-3 rtl:space-x-reverse p-0 sm:py-2 sm:px-3 md:bg-transparent md:p-0"
                             : "block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 "
@@ -78,7 +79,7 @@ export default function ResponsiveNavbar() {
 
                 <NavbarContent justify="center">
                     <NavbarBrand>
-                        <Link href="/" className="flex items-center space-x-4">
+                        <Link href="/" className="flex items-center space-x-4" rel="canonical" >
                             <Button className="hidden sm:block">
                                 <Clock locale="en-CA" />
                             </Button>
@@ -105,7 +106,8 @@ export default function ResponsiveNavbar() {
                                             ? "danger"
                                             : "foreground"
                                 }
-                                href={item.path === "#" ? "#" : item.path} // Fix for Mode Toggle
+                                href={item.path === "#" ? "#" : item.path}
+                                rel="canonical" 
                                 size="lg"
                             >
                                 {item.component || item.label}

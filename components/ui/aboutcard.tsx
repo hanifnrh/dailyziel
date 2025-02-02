@@ -24,6 +24,7 @@ export function AboutCard() {
                         href="https://drive.google.com/drive/u/2/folders/19xwOE2Vdpmu_RYAfC6ViOwYgmPzqkVOo"
                         target="__blank"
                         className="px-4 py-2 rounded-xl text-md font-normal dark:text-white"
+                        rel="canonical"
                     >
                         Resume →
                     </CardItem>
@@ -33,6 +34,7 @@ export function AboutCard() {
                         href="https://www.linkedin.com/in/nurrahmat-hanif-635055218/"
                         target="__blank"
                         className="px-4 py-2 rounded-xl bg-blue-800 dark:bg-white dark:text-black text-white text-md"
+                        rel="canonical"
                     >
                         LinkedIn
                     </CardItem>
