@@ -7,16 +7,12 @@ import { Timeline } from "@/components/ui/timeline";
 import "animate.css/animate.compat.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
 import { CgDesignmodo } from "react-icons/cg";
 import { FaCode } from "react-icons/fa";
 import { GiGraduateCap } from "react-icons/gi";
-
-export const metadata = {
-    title: "About Me - Ziel",
-    description: "I craft visual and design functional website. Transform your idea into an extraordinarily beautiful website.",
-};
 
 export default function Home() {
     useEffect(() => {
@@ -134,6 +130,9 @@ export default function Home() {
 
     return (
         <>
+            <Head>
+                <title>About Ziel - Creative Developer</title>
+            </Head>
             <main>
                 <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20 mt-14 sm:mt-20">
                     <BlurIn
