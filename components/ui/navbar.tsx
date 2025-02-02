@@ -51,7 +51,7 @@ export default function ResponsiveNavbar() {
                     >
                         <Image
                             src="/brands/ziel-logo.png"
-                            className="h-8 navbar-logo"
+                            className="h-8 w-auto navbar-logo"
                             alt="Ziel Logo"
                             width={200}
                             height={200}

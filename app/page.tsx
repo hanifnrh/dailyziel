@@ -230,7 +230,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <Image src="/images/academiku.png" alt="Academiku Prototype" width={500} height={500} className="w-full h-full" />
+                  <Image src="/images/academiku.png" alt="Academiku Prototype" width={500} height={500} className="w-full h-auto" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -298,7 +298,7 @@ export default function Home() {
               </div>
               <div className="order-2 xl:order-1" data-aos="fade-right">
                 <SimpleCard_V5>
-                  <Image src="/images/jiwakita.png" alt="Jiwakita Prototype" width={500} height={500} className="w-full h-full" />
+                  <Image src="/images/jiwakita.png" alt="Jiwakita Prototype" width={500} height={500} className="w-full h-auto" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -364,7 +364,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <Image src="/images/kerjokidul.png" alt="Kerjo Kidul Web" width={500} height={500} className="w-full h-full"/>
+                  <Image src="/images/kerjokidul.png" alt="Kerjo Kidul Web" width={500} height={500} className="w-full h-auto"/>
                 </SimpleCard_V5>
               </div>
             </div>
@@ -427,7 +427,7 @@ export default function Home() {
               </div>
               <div className="order-2 xl:order-1" data-aos="fade-right">
                 <SimpleCard_V5>
-                  <Image src="/images/clipvision.png" alt="Clipvision Web" width={500} height={500} className="w-full h-full"/>
+                  <Image src="/images/clipvision.png" alt="Clipvision Web" width={500} height={500} className="w-full h-auto"/>
                 </SimpleCard_V5>
               </div>
             </div>
@@ -493,7 +493,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <Image src="/images/ecofix.png" alt="Ecofix Page" width={500} height={500} className="w-full h-full"/>
+                  <Image src="/images/ecofix.png" alt="Ecofix Page" width={500} height={500} className="w-full h-auto"/>
                 </SimpleCard_V5>
               </div>
             </div>
