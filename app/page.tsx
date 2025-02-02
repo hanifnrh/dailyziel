@@ -82,7 +82,7 @@ export default function Home() {
                     className="flex justify-center items-center text-center group"
                     href="https://github.com/hanifnrh"
                     target="_blank"
-                    rel="canonical" 
+                    rel="canonical"
                   >
                     🔮
                     <span
@@ -97,7 +97,7 @@ export default function Home() {
                 </AnimatedGradientText>
               </div>
               <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center mt-10">
-                <a
+                <div
                   className="flex items-center gap-2 justify-center text-base body-light tracking-normal cursor-pointer"
                   onClick={(e) => {
                     e.preventDefault();
@@ -108,9 +108,9 @@ export default function Home() {
                     ⌘ Ctrl + D
                   </KbdButton>
                   Theme
-                </a>
+                </div>
 
-                <a
+                <div
                   className="flex items-center gap-2 justify-center text-base body-light tracking-normal cursor-pointer"
                   onClick={openMenu}
                 >
@@ -118,7 +118,7 @@ export default function Home() {
                     ⌘ Ctrl + Q
                   </KbdButton>
                   Menu
-                </a>
+                </div>
               </div>
             </FadeText>
           </div>
@@ -209,7 +209,7 @@ export default function Home() {
                       href="https://www.scribd.com/document/712454157/Academiku-Prototipe-Aplikasi-untuk-Mempermudah-Siswa-dan-Pengajar-dalam-Kegiatan-Belajar-Mengajar"
                       target="_blank"
                       className="text-sm lg:text-lg text-white dark:text-black"
-                      rel="canonical" 
+                      rel="canonical"
                     >
                       Case Study
                     </Link>
@@ -219,7 +219,7 @@ export default function Home() {
                       href="https://www.figma.com/proto/4dpPY9tTTpaERumMd80OqI/Academiku?page-id=0%3A1&node-id=90-837&viewport=505%2C2553%2C0.87&t=tt3fxops6J46CJzg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=290%3A1758&show-proto-sidebar=1"
                       target="_blank"
                       className="text-sm lg:text-lg"
-                      rel="canonical" 
+                      rel="canonical"
                     >
                       Prototype
                     </Link>
@@ -277,7 +277,7 @@ export default function Home() {
                       href="https://www.scribd.com/document/712451093/Aplikasi-Jiwakita-Prototipe-Aplikasi-Kesehatan-Mental-dalam-Menghadapi-Permasalahan-Kesehatan-Mental-di-Era-Modern"
                       target="_blank"
                       className="text-sm lg:text-lg text-white dark:text-black"
-                      rel="canonical" 
+                      rel="canonical"
                     >
                       Case Study
                     </Link>
@@ -287,7 +287,7 @@ export default function Home() {
                       href="https://www.figma.com/proto/JOBOHqk9w13ZWEth8bbTTZ/jiwakita?page-id=170%3A2702&node-id=874-30730&starting-point-node-id=874%3A25000&t=doKBH4JOUhc4Ac5I-1"
                       target="_blank"
                       className="text-sm lg:text-lg"
-                      rel="canonical" 
+                      rel="canonical"
                     >
                       Prototype
                     </Link>
@@ -353,7 +353,7 @@ export default function Home() {
                       href="https://github.com/hanifnrh/kerjokidul"
                       target="_blank"
                       className="text-sm lg:text-lg"
-                      rel="canonical" 
+                      rel="canonical"
                     >
                       Github
                     </Link>
@@ -482,7 +482,7 @@ export default function Home() {
                       href="https://github.com/gassolution/gas-web"
                       target="_blank"
                       className="text-sm lg:text-lg"
-                      rel="canonical" 
+                      rel="canonical"
                     >
                       Github
                     </Link>
