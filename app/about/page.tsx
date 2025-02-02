@@ -28,28 +28,28 @@ export default function Home() {
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                         <Image
-                            src="/satosugu.png"
+                            src="/images/satosugu.png"
                             alt="Satosugu"
                             width={500}
                             height={500}
                             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:shadow-none"
                         />
                         <Image
-                            src="/breeze.png"
+                            src="/images/breeze.png"
                             alt="Breeze"
                             width={500}
                             height={500}
                             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:shadow-none"
                         />
                         <Image
-                            src="/howl.png"
+                            src="/images/howl.png"
                             alt="Howl"
                             width={500}
                             height={500}
                             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:shadow-none"
                         />
                         <Image
-                            src="/neilperry.png"
+                            src="/images/neilperry.png"
                             alt="Neil Perry"
                             width={500}
                             height={500}
@@ -68,28 +68,28 @@ export default function Home() {
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                         <Image
-                            src="/academiku.png"
+                            src="/images/academiku.png"
                             alt="Academiku"
                             width={500}
                             height={500}
                             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:shadow-none"
                         />
                         <Image
-                            src="/jiwakita.png"
+                            src="/images/jiwakita.png"
                             alt="Jiwakita"
                             width={500}
                             height={500}
                             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:shadow-none"
                         />
                         <Image
-                            src="/clothing.png"
+                            src="/images/clothing.png"
                             alt="Ziel Clothing"
                             width={500}
                             height={500}
                             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:shadow-none"
                         />
                         <Image
-                            src="/dailyziel1.png"
+                            src="/images/dailyziel1.png"
                             alt="Dailyziel 1.0"
                             width={500}
                             height={500}
@@ -109,14 +109,14 @@ export default function Home() {
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                         <Image
-                            src="/kerjokidul.png"
+                            src="/images/kerjokidul.png"
                             alt="Kerjo Kidul"
                             width={500}
                             height={500}
                             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:shadow-none"
                         />
                         <Image
-                            src="/sigmadasbor.png"
+                            src="/images/sigmadasbor.png"
                             alt="Sigma Dashboard"
                             width={500}
                             height={500}

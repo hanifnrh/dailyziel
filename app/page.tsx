@@ -237,7 +237,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <img src="/images/academiku.png" alt="" />
+                  <img src="/images/academiku.png" alt="Academiku Prototype" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -303,7 +303,7 @@ export default function Home() {
               </div>
               <div className="order-2 xl:order-1" data-aos="fade-right">
                 <SimpleCard_V5>
-                  <img src="/images/jiwakita.png" alt="" />
+                  <img src="/images/jiwakita.png" alt="Jiwakita Prototype" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -368,7 +368,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <img src="/images/kerjokidul.png" alt="" />
+                  <img src="/images/kerjokidul.png" alt="Kerjo Kidul Web" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -430,7 +430,7 @@ export default function Home() {
               </div>
               <div className="order-2 xl:order-1" data-aos="fade-right">
                 <SimpleCard_V5>
-                  <img src="/images/clipvision.png" alt="" />
+                  <img src="/images/clipvision.png" alt="Clipvision Web" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -495,7 +495,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <img src="/images/ecofix.png" alt="" />
+                  <img src="/images/ecofix.png" alt="Ecofix Page" />
                 </SimpleCard_V5>
               </div>
             </div>

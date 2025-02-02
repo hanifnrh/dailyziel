@@ -1,8 +1,8 @@
 import { MetadataRoute } from "next";
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = "https://www.dailyziel.com";
+export const baseUrl = "https://www.dailyziel.com";
 
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     return [
         {
             url: `${baseUrl}/`,
