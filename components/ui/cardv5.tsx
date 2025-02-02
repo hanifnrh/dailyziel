@@ -40,8 +40,8 @@ export const SimpleCard_V5 = ({ image, children, title, description }: CardConte
                         src={image}
                         alt={title || "Card Image"}
                         className="w-full h-auto rounded-t-sm"
-                        width={500}
-                        height={500}
+                        width={1000}
+                        height={1000}
                     />
                 ) : children ? (
                     <div>{children}</div>

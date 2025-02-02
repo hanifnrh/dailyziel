@@ -58,8 +58,8 @@ export default function Footer() {
                 <div className="justify-center sm:justify-start items-center flex">
                     <Image
                         src="/brands/ziel-logo.png"
-                        width={500}
-                        height={500}
+                        width={1000}
+                        height={1000}
                         className="h-12 w-auto navbar-logo"
                         alt="Picture of the author">
                     </Image>

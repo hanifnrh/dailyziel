@@ -53,8 +53,8 @@ export default function ResponsiveNavbar() {
                             src="/brands/ziel-logo.png"
                             className="h-8 w-auto navbar-logo"
                             alt="Ziel Logo"
-                            width={200}
-                            height={200}
+                            width={500}
+                            height={500}
                         />
                     </Link>
                     <Button className="hidden lg:block">
