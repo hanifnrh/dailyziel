@@ -88,7 +88,7 @@ export default function ResponsiveNavbar() {
                             </Button>
                             <Image
                                 src="https://zielbucket.s3.ap-southeast-2.amazonaws.com/public/brands/ziel-logo.png"
-                                className="h-8 navbar-logo"
+                                className="h-8 w-auto navbar-logo"
                                 alt="Ziel Logo"
                                 width={200}
                                 height={200}
