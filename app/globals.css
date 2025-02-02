@@ -177,7 +177,7 @@ html, body {
 }
 
 .dark .navbar-logo {
-  content: url('/brands/ziel-logo-white.png');
+  content: url('https://zielbucket.s3.ap-southeast-2.amazonaws.com/public/brands/ziel-logo-white.png');
   /* Dark mode logo */
 }
 

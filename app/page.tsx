@@ -60,13 +60,13 @@ export default function Home() {
             <div className="h-[40rem] w-auto -mb-96 -mt-56 flex items-center justify-center">
               <TextHoverEffect text="ZIEL" />
             </div>
-            <h1>
+            <div>
               <BlurIn
                 className="relative text-4xl md:text-4xl lg:text-6xl title-head max-w-7xl mx-auto text-center z-10 py-6 lg:px-40 bg-clip-text text-transparent bg-[linear-gradient(107deg,#000000_1.10%,#000000_60.18%,#ae04ba_80.100%)] dark:bg-[linear-gradient(107deg,#ffffff_1.10%,#ffffff_60.18%,#ae04ba_105.75%)]"
               >
                 Hi I&apos;m Ziel, a <Cover className="bg-clip-text bg-purple-950 dark:bg-white inline-block relative z-20 group-hover/cover:bg-white transition duration-200">creative</Cover> developer and designer
               </BlurIn>
-            </h1>
+            </div>
             <FadeText direction="up" className="" framerProps={{
               show: { transition: { delay: 0.5 } },
             }}>
@@ -133,9 +133,9 @@ export default function Home() {
         </BlurIn>
 
         <div className="overflow-x-hidden flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20">
-          <div className="body text-lg mt-10 border-b border-black" data-aos="fade-up">
+          <h1 className="body text-lg mt-10 border-b border-black" data-aos="fade-up">
             ABOUT
-          </div>
+          </h1>
           <div className="grid grid-cols-1 xl:grid-cols-2 items-center justify-center gap-4">
             <div className="body" data-aos="fade-right">
               <div className="body-bold text-center xl:text-start justify-center xl:justify-start text-xl md:text-4xl block">
@@ -230,7 +230,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <Image src="/images/academiku.png" alt="Academiku Prototype"/>
+                  <Image src="https://zielbucket.s3.ap-southeast-2.amazonaws.com/public/images/academiku.png" width={1000} height={1000} className="w-full h-auto" alt="Academiku Prototype" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -298,7 +298,7 @@ export default function Home() {
               </div>
               <div className="order-2 xl:order-1" data-aos="fade-right">
                 <SimpleCard_V5>
-                  <Image src="/images/jiwakita.png" alt="Jiwakita Prototype"/>
+                  <Image src="https://zielbucket.s3.ap-southeast-2.amazonaws.com/public/images/jiwakita.png" width={1000} height={1000} className="w-full h-auto" alt="Jiwakita Prototype" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -364,7 +364,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <Image src="/images/kerjokidul.png" alt="Kerjo Kidul Web"/>
+                  <Image src="https://zielbucket.s3.ap-southeast-2.amazonaws.com/public/images/kerjokidul.png" width={1000} height={1000} className="w-full h-auto" alt="Kerjo Kidul Web" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -427,7 +427,7 @@ export default function Home() {
               </div>
               <div className="order-2 xl:order-1" data-aos="fade-right">
                 <SimpleCard_V5>
-                  <Image src="/images/clipvision.png" alt="Clipvision Web"/>
+                  <Image src="https://zielbucket.s3.ap-southeast-2.amazonaws.com/public/images/clipvision.png" width={1000} height={1000} className="w-full h-auto" alt="Clipvision Web" />
                 </SimpleCard_V5>
               </div>
             </div>
@@ -493,7 +493,7 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <SimpleCard_V5>
-                  <Image src="/images/ecofix.png" alt="Ecofix Page"/>
+                  <Image src="https://zielbucket.s3.ap-southeast-2.amazonaws.com/public/images/ecofix.png" width={1000} height={1000} className="w-full h-auto" alt="Ecofix Page" />
                 </SimpleCard_V5>
               </div>
             </div>

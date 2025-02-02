@@ -57,7 +57,7 @@ export default function Footer() {
             <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-y-10 justify-between px-8 md:px-10 xl:px-20 py-20">
                 <div className="justify-center sm:justify-start items-center flex">
                     <Image
-                        src="/brands/ziel-logo.png"
+                        src="https://zielbucket.s3.ap-southeast-2.amazonaws.com/public/brands/ziel-logo.png"
                         width={1000}
                         height={1000}
                         className="h-12 w-auto navbar-logo"
