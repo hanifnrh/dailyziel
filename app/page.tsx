@@ -83,6 +83,7 @@ export default function Home() {
                     href="https://github.com/hanifnrh"
                     target="_blank"
                     rel="canonical"
+                    aria-label="Github"
                   >
                     🔮
                     <span

@@ -21,7 +21,7 @@ export const FloatingDock = ({
   desktopClassName,
   mobileClassName,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string; ariaLabel: string }[];
   desktopClassName?: string;
   mobileClassName?: string;
 }) => {
@@ -36,7 +36,7 @@ const FloatingDockDesktop = ({
   items,
   className,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string; ariaLabel: string }[];
   className?: string;
 }) => {
   let mouseX = useMotionValue(Infinity);
@@ -61,11 +61,13 @@ function IconContainer({
   title,
   icon,
   href,
+  ariaLabel,
 }: {
   mouseX: MotionValue;
   title: string;
   icon: React.ReactNode;
   href: string;
+  ariaLabel: string;
 }) {
   let ref = useRef<HTMLDivElement>(null);
 
@@ -110,7 +112,7 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <Link href={href} rel="canonical">
+    <Link href={href} rel="canonical" aria-label={ariaLabel}>
       <motion.div
         ref={ref}
         style={{ width, height }}

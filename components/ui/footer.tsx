@@ -23,7 +23,7 @@ export default function Footer() {
                 <div
                     className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
                 >
-                    <Ripple/>
+                    <Ripple />
                     <HeroHighlight>
                         <motion.h3
                             initial={{
@@ -71,6 +71,7 @@ export default function Footer() {
                         size="md"
                         target="__blank"
                         rel="canonical"
+                        aria-label="LinkedIn"
                     >
                         <span className="border-b border-black dark:border-white inline-flex">
                             LinkedIn <GoArrowUpRight className="transition-transform duration-200 transform group-hover:translate-y-[-4px]" />
@@ -82,6 +83,7 @@ export default function Footer() {
                         size="md"
                         target="__blank"
                         rel="canonical"
+                        aria-label="Instagram"
                     >
                         <span className="border-b border-black dark:border-white inline-flex">
                             Instagram <GoArrowUpRight className="transition-transform duration-200 transform group-hover:translate-y-[-4px]" />
@@ -93,6 +95,7 @@ export default function Footer() {
                         size="md"
                         target="__blank"
                         rel="canonical"
+                        aria-label="Email"
                     >
                         <span className="border-b border-black dark:border-white inline-flex">
                             Email

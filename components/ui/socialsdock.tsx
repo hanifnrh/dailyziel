@@ -9,7 +9,8 @@ export function SocialsDock() {
                 <FaGithub className="h-8 w-8 text-neutral-500 dark:text-neutral-300" />
             ),
             href: "https://github.com/hanifnrh",
-            target: "_blank"
+            target: "_blank",
+            ariaLabel: "Github"
         },
 
         {
@@ -18,7 +19,8 @@ export function SocialsDock() {
                 <FaInstagram className="h-8 w-8 text-neutral-500 dark:text-neutral-300" />
             ),
             href: "https://www.instagram.com/ziel.dev/",
-            target: "_blank"
+            target: "_blank",
+            ariaLabel: "Instagram"
         },
         {
             title: "Behance",
@@ -26,7 +28,8 @@ export function SocialsDock() {
                 <FaBehance className="h-8 w-8 text-neutral-500 dark:text-neutral-300" />
             ),
             href: "https://www.behance.net/dailyziel",
-            target: "_blank"
+            target: "_blank",
+            ariaLabel: "Behance"
         },
         {
             title: "Dribbble",
@@ -34,7 +37,8 @@ export function SocialsDock() {
                 <FaDribbble className="h-8 w-8 text-neutral-500 dark:text-neutral-300" />
             ),
             href: "https://dribbble.com/dailyziel",
-            target: "_blank"
+            target: "_blank",
+            ariaLabel: "Dribbble"
         },
     ];
 
