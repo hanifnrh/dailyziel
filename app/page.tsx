@@ -25,7 +25,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ChevronRight } from "lucide-react";
 import { useTheme } from "next-themes";
-import Head from "next/head";
 import { useEffect, useState } from "react";
 import { CgDesignmodo } from "react-icons/cg";
 import { FaCode } from "react-icons/fa";
@@ -47,17 +46,6 @@ export default function Home() {
   }, [])
   return (
     <>
-      <Head>
-        <title>Ziel - Creative Developer</title>
-        <meta name="description" content="Hello I'm Ziel, a web developer mainly using Next.js based in Jakarta & Semarang, Indonesia." />
-        <meta name="keywords" content="web developer, front end web developer, dailyziel, ziel, ziel developer, next js developer, ui ux designer, ui/ux designer, jasa web designer, jasa landing page" />
-        <meta name="author" content="Ziel - Creative Developer" />
-        <meta property="og:title" content="" />
-        <meta property="og:description" content="Hello I'm Ziel, a web developer mainly using Next.js based in Jakarta & Semarang, Indonesia." />
-        <meta property="og:image" content="/brands/ziel-logo.png" />
-        <meta property="og:type" content="website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
       <main>
         <div className="overflow-x-hidden flex flex-col items-center justify-center p-8 pb-20 gap-16 sm:p-20 mt-14 sm:mt-20">
           <div className="relative flex flex-col gap-8 items-center">

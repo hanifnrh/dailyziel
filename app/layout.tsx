@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     "designer",
   ],
   verification: {
-    google: "",
+    google: "0fZVJ4YEDNuyoWR6phur0AoiA02wRVo1vYUmuvvLC-o",
   },
   icons: {
     icon: `/favicon.ico`,

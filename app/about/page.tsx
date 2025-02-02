@@ -7,12 +7,16 @@ import { Timeline } from "@/components/ui/timeline";
 import "animate.css/animate.compat.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
 import { CgDesignmodo } from "react-icons/cg";
 import { FaCode } from "react-icons/fa";
 import { GiGraduateCap } from "react-icons/gi";
+
+export const metadata = {
+    title: "About Me - Ziel",
+    description: "I craft visual and design functional website. Transform your idea into an extraordinarily beautiful website.",
+};
 
 export default function Home() {
     useEffect(() => {
@@ -130,17 +134,6 @@ export default function Home() {
 
     return (
         <>
-            <Head>
-                <title>Ziel - Creative Developer</title>
-                <meta name="description" content="Hello I'm Ziel, a web developer mainly using Next.js based in Jakarta & Semarang, Indonesia." />
-                <meta name="keywords" content="web developer, front end web developer, dailyziel, ziel, ziel developer, next js developer, ui ux designer, ui/ux designer, jasa web designer, jasa landing page" />
-                <meta name="author" content="Ziel - Creative Developer" />
-                <meta property="og:title" content="" />
-                <meta property="og:description" content="Hello I'm Ziel, a web developer mainly using Next.js based in Jakarta & Semarang, Indonesia." />
-                <meta property="og:image" content="/brands/ziel-logo.png" />
-                <meta property="og:type" content="website" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            </Head>
             <main>
                 <div className="flex flex-col gap-10 items-center px-8 md:px-20 lg:px-40 py-20 mt-14 sm:mt-20">
                     <BlurIn
