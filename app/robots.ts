@@ -4,12 +4,8 @@ export default function robots(): MetadataRoute.Robots {
     return {
         rules: [
             {
-                userAgent: "Googlebot",
+                userAgent: ["Googlebot", "Applebot", "Bingbot"],
                 allow: ["/"],
-            },
-            {
-                userAgent: ["Applebot", "Bingbot"],
-                disallow: ["/"],
             },
         ],
         sitemap: "https://msaf.tech/sitemap.xml",
