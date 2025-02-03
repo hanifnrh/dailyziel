@@ -8,7 +8,7 @@ function robots() {
                 allow: ["/"]
             },
         ],
-        sitemap: "https://msaf.tech/sitemap.xml"
+        sitemap: "https://www.dailyziel.com/sitemap.xml"
     };
 }
 exports["default"] = robots;
