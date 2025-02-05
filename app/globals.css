@@ -201,4 +201,5 @@ html, body {
 
 ::selection {
   background: #c80cd5;
+  color: white;
 }
