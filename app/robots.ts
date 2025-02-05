@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
                 allow: ["/"],
             },
         ],
-        sitemap: "https://dailyziel.com/sitemap.xml",
+        sitemap: "https://www.dailyziel.com/sitemap.xml",
     };
 }

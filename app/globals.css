@@ -198,3 +198,7 @@ html, body {
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
+
+::selection {
+  background: #c80cd5;
+}
